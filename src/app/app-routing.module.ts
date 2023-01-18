@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'accueil', component: AccueilComponent
-  },
+  }
 ];
 
 @NgModule({
