@@ -1,0 +1,41 @@
+.main {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__perso {
+        display: flex;
+
+        &--right {
+            display: flex;
+            justify-content: right;
+            margin-right: 10px;
+        }
+
+        &--left {
+            display: flex;
+            justify-content: left;
+            margin-left: 10px;
+        }
+    }
+}
+
+.perso {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    box-shadow: lightgray 4px 4px 20px;  
+
+    &__img {
+        height: 30vh;
+    }
+}
+
+.progress-fight {
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    box-shadow: lightgray 4px 4px 20px;  
+}
