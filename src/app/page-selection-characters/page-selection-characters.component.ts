@@ -11,7 +11,7 @@ export class PageSelectionCharactersComponent {
 constructor(private router:Router){};
 
 page3():void{
-  this.router.navigate(["/fight"]);
+  this.router.navigate(["/recap"]);
 }
 
 }

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
 import { PageFightComponent } from './page-fight/page-fight.component';
 import { PageSelectionCharactersComponent } from './page-selection-characters/page-selection-characters.component';
-
+import { RecapComponent } from './recap/recap.component';
 
 const routes: Routes = [
   {
@@ -19,6 +19,9 @@ const routes: Routes = [
   {
     path: 'fight', component: PageFightComponent
 
+  },
+  {
+    path: 'recap', component: RecapComponent
   }
 ];
 
