@@ -11,12 +11,14 @@ const routes: Routes = [
   },
   {
     path: 'accueil', component: AccueilComponent
+
   },
   {
     path: 'selection-perso', component: PageSelectionCharactersComponent
   },
   {
     path: 'fight', component: PageFightComponent
+
   }
 ];
 
