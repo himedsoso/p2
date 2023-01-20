@@ -7,6 +7,8 @@ import { Router } from '@angular/router'
 })
 export class AccueilComponent {
 
+  title = "Le jeu des heros";
+
   constructor (private router: Router){}
 select() {
   this.router.navigate(["/selection-perso"])

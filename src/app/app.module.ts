@@ -13,6 +13,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ProgressBarComponent } from './tools/progress-bar/progress-bar.component';
 import { TimelineFightComponent } from './tools/timeline-fight/timeline-fight.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
