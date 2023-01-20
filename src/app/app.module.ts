@@ -8,6 +8,7 @@ import { PageSelectionCharactersComponent } from './page-selection-characters/pa
 import { AccueilComponent } from './accueil/accueil.component';
 import { PageFightComponent } from './page-fight/page-fight.component';
 import { RecapComponent } from './recap/recap.component';
+import { FinComponent } from './fin/fin.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RecapComponent } from './recap/recap.component';
     PageSelectionCharactersComponent,
     AccueilComponent,
     PageFightComponent,
-    RecapComponent
+    RecapComponent,
+    FinComponent
   ],
   imports: [
     BrowserModule,
