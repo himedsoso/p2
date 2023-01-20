@@ -8,6 +8,11 @@ import { PageSelectionCharactersComponent } from './page-selection-characters/pa
 import { AccueilComponent } from './accueil/accueil.component';
 import { PageFightComponent } from './page-fight/page-fight.component';
 import { RecapComponent } from './recap/recap.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ProgressBarComponent } from './tools/progress-bar/progress-bar.component';
+import { TimelineFightComponent } from './tools/timeline-fight/timeline-fight.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +20,16 @@ import { RecapComponent } from './recap/recap.component';
     PageSelectionCharactersComponent,
     AccueilComponent,
     PageFightComponent,
-    RecapComponent
+    RecapComponent,
+    ProgressBarComponent,
+    TimelineFightComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
