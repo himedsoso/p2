@@ -9,9 +9,11 @@ import { DataService } from '../data.service';
 })
 export class AccueilComponent {
 
-  constructor (private router: Router, private name : DataService){
-  }
-titre = this.name.title
+
+  title = "Le jeu des heros";
+
+  constructor (private router: Router){}
+
 select() {
   this.router.navigate(["/selection-perso"])
 }

@@ -10,6 +10,9 @@ import { PageFightComponent } from './page-fight/page-fight.component';
 import { RecapComponent } from './recap/recap.component';
 import { FinComponent } from './fin/fin.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,8 @@ import { FinComponent } from './fin/fin.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
