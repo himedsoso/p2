@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
+import { FinComponent } from './fin/fin.component';
 import { PageFightComponent } from './page-fight/page-fight.component';
 import { PageSelectionCharactersComponent } from './page-selection-characters/page-selection-characters.component';
 import { RecapComponent } from './recap/recap.component';
@@ -25,7 +26,11 @@ const routes: Routes = [
     path: 'recap', component: RecapComponent
   },
   {
+
     path: 'winner', component: PageWinnerComponent
+
+    path:'fin', component: FinComponent
+
   }
 ];
 

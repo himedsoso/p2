@@ -1,5 +1,11 @@
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'
+
+import { Component, Input } from '@angular/core';
+
+
+
 
 @Component({
   selector: 'app-page-fight',
@@ -9,7 +15,12 @@ import { Router } from '@angular/router'
 export class PageFightComponent {
   constructor(private router:Router){};
 
+
 page4():void{
   this.router.navigate(["/winner"]);
 }
+
+
+  
+
 }

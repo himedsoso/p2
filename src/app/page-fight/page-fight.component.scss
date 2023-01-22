@@ -1,9 +1,10 @@
 .main {
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background: url('../../assets/arena1.png') center/cover;
 
     &__perso {
         display: flex;
@@ -30,6 +31,10 @@
 
     &__img {
         height: 30vh;
+    }
+
+    &--right {
+        flex-direction: row-reverse;
     }
 }
 

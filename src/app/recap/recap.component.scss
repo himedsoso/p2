@@ -1,0 +1,409 @@
+@media screen and (max-width: 640px) {
+
+
+.red {
+    height: 155vh;
+    width: 80vw;
+    background-color: red;
+    transform : rotate(20deg);
+    position: absolute;
+    right: 35%;
+   bottom: 6%;
+    // margin-left: 20%;
+    
+}
+.blue {
+    height: 155vh;
+    width: 80vw;
+    transform : rotate(20deg);
+    position: absolute;
+    right: -42%;
+    bottom: -10%;
+    background-color:blue;
+
+
+    
+    
+    
+
+}
+.trait {
+    width: 0.8vw;
+    height: 100vh;
+    background-color: #0c0c01;
+    transform : rotate(20deg);
+    position: absolute;
+    margin-left: 47%;
+    margin-top: -5%;
+
+}
+.versus {
+    display: flex;
+    justify-content: center;
+    
+}
+.vs {
+   width: 50vw;
+   margin-top: 35%;
+   position: absolute;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.perso1 {
+    background-color: aqua;
+    width: 35vw;
+    height: 20vh;
+    position: relative;
+    // margin-top: -150%;
+    
+   
+   
+}
+
+.arme1 {
+    background-color:rgb(0, 255, 204);
+    width: 35vw;
+    height: 15vh;
+    position: relative;
+    
+}
+
+.perso2 {
+    background-color: aqua;
+    width: 35vw;
+    height: 20vh;
+    margin-left: 60%;
+    margin-top: 15%;
+    position: relative;
+}
+
+.arme2 {
+
+    background-color:rgb(0, 255, 204);
+    width: 35vw;
+    height: 15vh;
+    margin-left: 60%;
+    position: relative;
+}
+
+button {
+    margin-left: 35%;
+}
+.loader {
+    width: 10%;
+    height: 10%;
+    
+    margin-left: 30%;
+    margin-bottom: 5%;
+    
+}
+
+.lettre {
+    color: #484848;
+    font-size: 20px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+    position: relative;
+    
+}
+@keyframes flash {
+    0% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+}
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.fonfu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+.bas {
+    position: relative;
+    height: 7vh;
+    width: 100vw;
+    background-color: #0c0c01;
+    margin-top: 5%;
+}
+.back {
+    position: absolute;
+    left: -160px;
+    width: 30vw;
+    height: 5vh;
+    background-color:rgb(185, 183, 183);
+    margin-top: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    
+
+
+
+}
+
+.valid {
+    position: absolute;
+    left: 150px;
+    width: 30vw;
+    height: 5vh;
+    background-color:rgb(185, 183, 183);
+    margin-top: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+}
+
+@media screen and (min-width: 641px) {
+    .red {
+        height: 155vh;
+        width: 150vw;
+        background-color: red;
+        transform : rotate(20deg);
+        position: absolute;
+        right: 35%;
+        bottom: 6%;
+        // margin-left: 20%;
+        
+    }
+    .blue {
+        height: 155vh;
+        width: 80vw;
+        transform : rotate(20deg);
+        position: absolute;
+        right: -29%;
+        bottom: -40%;
+        background-color:blue;
+    
+    
+        
+        
+        
+    
+    }
+    .trait {
+        width: 0.1vw;
+        height: 100vh;
+        background-color: #0c0c01;
+        transform : rotate(20deg);
+        position: absolute;
+        margin-left: 47%;
+        margin-top: -0%;
+    
+    }
+    .versus {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .vs {
+       width: 30vw;
+       margin-top: 8%;
+       position: absolute;
+       margin-right: 6%;
+    }
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .perso1 {
+        background-color: aqua;
+        width: 25vw;
+        height: 40vh;
+        position: relative;
+        margin-left: 5%;
+        // margin-top: -150%;
+        
+       
+       
+    }
+    
+    .arme1 {
+        background-color:rgb(0, 255, 204);
+        width: 15vw;
+        height: 25vh;
+        position: relative;
+        margin-left: 10%;
+        
+    }
+    
+    .perso2 {
+        background-color: aqua;
+        width: 25vw;
+        height: 40vh;
+        margin-left: 65%;
+        margin-top: -30%;
+
+        position: relative;
+    }
+    
+    .arme2 {
+    
+        background-color:rgb(0, 255, 204);
+        width: 15vw;
+        height: 25vh;
+        margin-left: 70%;
+        position: relative;
+    }
+    
+    button {
+        margin-left: 35%;
+    }
+    .loader {
+        width: 10%;
+        height: 10%;
+        
+        margin-left: 30%;
+        margin-bottom: 5%;
+        
+    }
+    
+    .lettre {
+        color: #484848;
+        font-size: 400%;
+        letter-spacing: 15px;
+        margin-bottom: 150px;
+        animation: flash 1.2s linear infinite;
+        position: relative;
+        
+    }
+    @keyframes flash {
+        0% {
+            color: #fff900;
+            text-shadow: 0 0 7px #fff900;
+        }
+        90% {
+            color: #484848;
+            text-shadow: none;
+        }
+        100% {
+            color: #fff900;
+            text-shadow: 0 0 7px #fff900;
+        }
+    }
+    .lettre:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    
+    .lettre:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .lettre:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    
+    .lettre:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+    
+    .lettre:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+    
+    .lettre:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+    
+    .lettre:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+    
+    .lettre:nth-child(8) {
+        animation-delay: 0.8s;
+    }
+    
+    .lettre:nth-child(9) {
+        animation-delay: 0.9s;
+    }
+    
+    .lettre:nth-child(10) {
+        animation-delay: 1s;
+    }
+    
+    .fonfu-out {
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+    }
+    .bas {
+        position: relative;
+        height: 7vh;
+        width: 100vw;
+        background-color: #0c0c01;
+        margin-top: 5%;
+    }
+    .back {
+        position: absolute;
+        left: -160px;
+        width: 30vw;
+        height: 5vh;
+        background-color:rgb(185, 183, 183);
+        margin-top: 1%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        
+    
+    
+    
+    }
+    
+    .valid {
+        position: absolute;
+        left: 150px;
+        width: 30vw;
+        height: 5vh;
+        background-color:rgb(185, 183, 183);
+        margin-top: 1%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+}
