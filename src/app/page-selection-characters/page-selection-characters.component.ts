@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class PageSelectionCharactersComponent {
 constructor(private router:Router){};
 
-page3():void{
+page2():void{
   this.router.navigate(["/recap"]);
 }
 

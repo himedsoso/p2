@@ -4,6 +4,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { PageFightComponent } from './page-fight/page-fight.component';
 import { PageSelectionCharactersComponent } from './page-selection-characters/page-selection-characters.component';
 import { RecapComponent } from './recap/recap.component';
+import { PageWinnerComponent } from './page-winner/page-winner.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,9 @@ const routes: Routes = [
   },
   {
     path: 'recap', component: RecapComponent
+  },
+  {
+    path: 'winner', component: PageWinnerComponent
   }
 ];
 

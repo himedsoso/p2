@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'
+
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
@@ -7,10 +8,11 @@ import { Router } from '@angular/router'
 })
 export class AccueilComponent {
 
-  title = "Le jeu des heros";
+  title = "Heroes Battle";
 
   constructor (private router: Router){}
-select() {
+
+  select() {
   this.router.navigate(["/selection-perso"])
 }
 }
