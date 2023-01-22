@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PageSelectionCharactersComponent } from './page-selection-characters/page-selection-characters.component';
+
 
 import { AccueilComponent } from './accueil/accueil.component';
-import { PageFightComponent } from './page-fight/page-fight.component';
+import { PageSelectionCharactersComponent } from './page-selection-characters/page-selection-characters.component';
 import { RecapComponent } from './recap/recap.component';
+
+import { PageFightComponent } from './page-fight/page-fight.component';
+import { PageWinnerComponent } from './page-winner/page-winner.component';
+=======
 import { FinComponent } from './fin/fin.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,17 +22,23 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    PageSelectionCharactersComponent,
     AccueilComponent,
+    PageSelectionCharactersComponent,
+    RecapComponent,
     PageFightComponent,
+
+    PageWinnerComponent
+
     RecapComponent,
     FinComponent,
     ProgressBarComponent,
     TimelineFightComponent,
     FooterComponent
+
 
   ],
   imports: [

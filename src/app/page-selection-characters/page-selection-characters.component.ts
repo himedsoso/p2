@@ -23,4 +23,9 @@ export class PageSelectionCharactersComponent  {
 
 
 
+page2():void{
+  this.router.navigate(["/recap"]);
+}
+
+
 }
