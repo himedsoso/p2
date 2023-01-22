@@ -45,7 +45,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
     HttpClientModule
   ],
   providers: [],
