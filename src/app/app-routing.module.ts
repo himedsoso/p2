@@ -28,6 +28,8 @@ const routes: Routes = [
   {
 
     path: 'winner', component: PageWinnerComponent
+  },
+  {
 
     path:'fin', component: FinComponent
 
