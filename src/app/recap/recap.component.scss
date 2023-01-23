@@ -1,62 +1,63 @@
 @media screen and (max-width: 640px) {
 
-
-.red {
-    height: 155vh;
-    width: 80vw;
-    background-color: red;
-    transform : rotate(20deg);
-    position: absolute;
-    right: 35%;
-   bottom: 6%;
-    // margin-left: 20%;
-    
-}
-.blue {
-    height: 155vh;
-    width: 80vw;
-    transform : rotate(20deg);
-    position: absolute;
-    right: -42%;
-    bottom: -10%;
-    background-color:blue;
-
-
-    
-    
-    
-
-}
-.trait {
-    width: 0.8vw;
+img {
+    width: 96vw;
     height: 100vh;
-    background-color: #0c0c01;
-    transform : rotate(20deg);
-    position: absolute;
-    margin-left: 47%;
-    margin-top: -5%;
-
 }
-.versus {
-    display: flex;
-    justify-content: center;
+// .red {
+//     height: 155vh;
+//     width: 80vw;
+//     background-color: red;
+//     transform : rotate(20deg);
+//     position: absolute;
+//     right: 35%;
+//    bottom: 6%;
     
-}
-.vs {
-   width: 50vw;
-   margin-top: 35%;
-   position: absolute;
-}
+    
+// }
+// .blue {
+//     height: 155vh;
+//     width: 80vw;
+//     transform : rotate(20deg);
+//     position: absolute;
+//     right: -42%;
+//     bottom: -10%;
+//     background-color:blue;
 
-h1 {
-    display: flex;
-    justify-content: center;
-}
+
+    
+    
+    
+
+// }
+// .trait {
+//     width: 0.8vw;
+//     height: 100vh;
+//     background-color: #0c0c01;
+//     transform : rotate(20deg);
+//     position: absolute;
+//     margin-left: 47%;
+//     margin-top: -5%;
+
+// }
+// .versus {
+//     display: flex;
+//     justify-content: center;
+    
+// }
+// .vs {
+//    width: 50vw;
+//    margin-top: 35%;
+//    position: absolute;
+// }
+
+
 .perso1 {
-    background-color: aqua;
+    background-color: rgb(30, 77, 77);
     width: 35vw;
     height: 20vh;
     position: relative;
+    margin-left: 2%;
     // margin-top: -150%;
     
    
@@ -64,28 +65,29 @@ h1 {
 }
 
 .arme1 {
-    background-color:rgb(0, 255, 204);
+    background-color:rgb(145, 194, 184);
     width: 35vw;
     height: 15vh;
+    margin-left: 2%;
     position: relative;
     
 }
 
 .perso2 {
-    background-color: aqua;
+    background-color:rgb(30, 77, 77);
     width: 35vw;
     height: 20vh;
-    margin-left: 60%;
+    margin-left: 61%;
     margin-top: 15%;
     position: relative;
 }
 
 .arme2 {
 
-    background-color:rgb(0, 255, 204);
+    background-color:rgb(145, 194, 184);
     width: 35vw;
     height: 15vh;
-    margin-left: 60%;
+    margin-left: 61%;
     position: relative;
 }
 
@@ -98,6 +100,7 @@ button {
     
     margin-left: 30%;
     margin-bottom: 5%;
+    margin-top: -140%;
     
 }
 
@@ -169,11 +172,12 @@ button {
     transition: opacity 0.4s ease-out;
 }
 .bas {
-    position: relative;
-    height: 7vh;
-    width: 100vw;
-    background-color: #0c0c01;
+    // position: relative;
+    // height: 7vh;
+    // width: 100vw;
+    // background-color: #0c0c01;
     margin-top: 5%;
+    
 }
 .back {
     position: absolute;
@@ -203,57 +207,57 @@ button {
 }
 
 @media screen and (min-width: 641px) {
-    .red {
-        height: 155vh;
-        width: 150vw;
-        background-color: red;
-        transform : rotate(20deg);
-        position: absolute;
-        right: 35%;
-        bottom: 6%;
-        // margin-left: 20%;
+    // .red {
+    //     height: 155vh;
+    //     width: 150vw;
+    //     background-color: red;
+    //     transform : rotate(20deg);
+    //     position: absolute;
+    //     right: 35%;
+    //     bottom: 6%;
         
-    }
-    .blue {
-        height: 155vh;
-        width: 80vw;
-        transform : rotate(20deg);
-        position: absolute;
-        right: -29%;
-        bottom: -40%;
-        background-color:blue;
+        
+    // }
+    // .blue {
+    //     height: 155vh;
+    //     width: 80vw;
+    //     transform : rotate(20deg);
+    //     position: absolute;
+    //     right: -29%;
+    //     bottom: -40%;
+    //     background-color:blue;
     
     
         
         
         
     
-    }
-    .trait {
-        width: 0.1vw;
+    // }
+    // .trait {
+    //     width: 0.1vw;
+    //     height: 100vh;
+    //     background-color: #0c0c01;
+    //     transform : rotate(20deg);
+    //     position: absolute;
+    //     margin-left: 47%;
+    //     margin-top: -0%;
+    
+    // }
+    // .versus {
+    //     display: flex;
+    //     justify-content: center;
+        
+    // }
+    // .vs {
+    //    width: 30vw;
+    //    margin-top: 8%;
+    //    position: absolute;
+    //    margin-right: 6%;
+    // }
+    
+    img {
+        width: 99vw;
         height: 100vh;
-        background-color: #0c0c01;
-        transform : rotate(20deg);
-        position: absolute;
-        margin-left: 47%;
-        margin-top: -0%;
-    
-    }
-    .versus {
-        display: flex;
-        justify-content: center;
-        
-    }
-    .vs {
-       width: 30vw;
-       margin-top: 8%;
-       position: absolute;
-       margin-right: 6%;
-    }
-    
-    h1 {
-        display: flex;
-        justify-content: center;
     }
     .perso1 {
         background-color: aqua;
@@ -301,7 +305,7 @@ button {
     .loader {
         width: 10%;
         height: 10%;
-        
+        margin-top: -45%;
         margin-left: 30%;
         margin-bottom: 5%;
         
@@ -375,11 +379,11 @@ button {
         transition: opacity 0.4s ease-out;
     }
     .bas {
-        position: relative;
-        height: 7vh;
-        width: 100vw;
-        background-color: #0c0c01;
-        margin-top: 5%;
+        // position: relative;
+        // height: 7vh;
+        // width: 100vw;
+        // background-color: #0c0c01;
+        // margin-top: 5%;
     }
     .back {
         position: absolute;
