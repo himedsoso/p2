@@ -11,7 +11,6 @@ import { RecapComponent } from './recap/recap.component';
 
 import { PageFightComponent } from './page-fight/page-fight.component';
 import { PageWinnerComponent } from './page-winner/page-winner.component';
-=======
 import { FinComponent } from './fin/fin.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,9 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     PageSelectionCharactersComponent,
     RecapComponent,
     PageFightComponent,
-
-    PageWinnerComponent
-
+    PageWinnerComponent,
     RecapComponent,
     FinComponent,
     ProgressBarComponent,
