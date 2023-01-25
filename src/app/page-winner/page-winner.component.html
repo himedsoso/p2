@@ -1,8 +1,16 @@
 <div class="main">
     <div class="winner">
+        
+        <canvas id="canvas"></canvas>
 
-    </div>
-</div>
-<div>
+        <!-- canvas fullscreen -->
+        <script>
+          const height = document.body.offsetHeight;
+          const width = document.body.offsetWidth;
+          const cvs = document.getElementById('canvas');
+          cvs.setAttribute("height", height);
+          cvs.setAttribute("width", width);
+        </script>
+    <div>
     <button (click) = 'page5()' >Test</button>
     </div>
