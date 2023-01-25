@@ -19,6 +19,7 @@ export class PageSelectionCharactersComponent  {
 
   page3(): void {
     this.router.navigate(["/recap"]);
+   
   }
 
 
@@ -29,3 +30,4 @@ page2():void{
 
 
 }
+
