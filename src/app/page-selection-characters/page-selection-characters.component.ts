@@ -9,7 +9,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./page-selection-characters.component.scss']
 })
 export class PageSelectionCharactersComponent {
-  constructor(private router: Router, private heroes: HeroesInformationsService, private data: DataService) { }
+  constructor(private router: Router, private data: DataService) { }
 
   title = this.data.title
 
@@ -17,10 +17,6 @@ export class PageSelectionCharactersComponent {
     this.router.navigate(["/recap"]);
   }
 
-  page2(): void {
-    this.router.navigate(["/recap"]);
-  }
 
-
-
+   
 }

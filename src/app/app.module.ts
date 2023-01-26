@@ -19,6 +19,7 @@ import { ProgressBarComponent } from './tools/progress-bar/progress-bar.componen
 import { TimelineFightComponent } from './tools/timeline-fight/timeline-fight.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardHeroeComponent } from './card-heroe/card-heroe.component';
 
 
 
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     FinComponent,
     ProgressBarComponent,
     TimelineFightComponent,
-    FooterComponent
+    FooterComponent,
+    CardHeroeComponent
 
 
   ],
@@ -48,7 +50,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatProgressBarModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: Window, useValue: window }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
