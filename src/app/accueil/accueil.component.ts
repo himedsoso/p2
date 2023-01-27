@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from '../data.service';
+import { HeroesInformationsService } from '../heroes-informations.service';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { DataService } from '../data.service';
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.scss']
 })
-export class AccueilComponent {
+export class AccueilComponent{
 
 
   title = "Heroes Battle";
@@ -18,4 +19,7 @@ export class AccueilComponent {
   select() {
     this.router.navigate(["/selection-perso"])
   }
+
+
+
 }
