@@ -20,6 +20,7 @@ import { TimelineFightComponent } from './tools/timeline-fight/timeline-fight.co
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalGaleryComponent } from './fin/modal-galery/modal-galery.component';
+import { CardHeroeComponent } from './card-heroe/card-heroe.component';
 
 
 
@@ -39,6 +40,7 @@ import { ModalGaleryComponent } from './fin/modal-galery/modal-galery.component'
     FooterComponent,
     ModalGaleryComponent,
     
+    CardHeroeComponent
 
 
   ],
@@ -52,7 +54,9 @@ import { ModalGaleryComponent } from './fin/modal-galery/modal-galery.component'
     MatProgressBarModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: Window, useValue: window }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
