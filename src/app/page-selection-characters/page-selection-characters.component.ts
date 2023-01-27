@@ -22,5 +22,5 @@ export class PageSelectionCharactersComponent implements OnInit {
     this.heroeService.OnInit()
    }
    
-}
 
+}
