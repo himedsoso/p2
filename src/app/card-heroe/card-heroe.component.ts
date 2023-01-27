@@ -25,31 +25,31 @@ export class CardHeroeComponent implements OnInit {
     }
   }
 
-  //   ngOnInit() {
-  //     // on recupére les info de l'API au démarage 
-  //     return this.heroes.ngOnInit().subscribe(apiHeroes => this.randomCard(apiHeroes))
-  //   }
+    ngOnInit() {
+      // on recupére les info de l'API au démarage 
+       this.heroes.OnInit().subscribe(apiHeroes => this.randomCard(apiHeroes))
+    }
 
-  //   // On recupére 20 perso aléatoirement 
-  //   randomCard(apiHeroes: any) {
-  //     const randomHeroesArr = []
-  //     for (let i = 0; i < 1; i++) {
-  //       randomHeroesArr.push(apiHeroes[Math.floor(Math.random() * 563)])
-  //     }
-  //     this.getRandomHeroes(randomHeroesArr)
-  //   }
+    // On recupére 20 perso aléatoirement 
+    randomCard(apiHeroes: any) {
+      const randomHeroesArr = []
+      for (let i = 0; i < 1; i++) {
+        randomHeroesArr.push(apiHeroes[Math.floor(Math.random() * 563)])
+      }
+      this.getRandomHeroes(randomHeroesArr)
+    }
 
-  // //  on stock les infos des perso via une fonction async (getRandomHeroes) dans un tableau (randomHeroes)
-  //   async getRandomHeroes(randomHeroesArr: any) {
+  //  on stock les infos des perso via une fonction async (getRandomHeroes) dans un tableau (randomHeroes)
+    async getRandomHeroes(randomHeroesArr: any) {
 
-  //     this.randomHeroes = await randomHeroesArr
-  //   }
+      this.randomHeroes = await randomHeroesArr
+    }
   
-  ngOnInit(): void {
+  // ngOnInit(): void {
     
-    this.randomHeroes = this.heroes.fullRandomHeroes;
+  //   this.randomHeroes = this.heroes.fullRandomHeroes;
 
-  }
+  // }
 
   
 }

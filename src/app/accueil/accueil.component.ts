@@ -9,19 +9,17 @@ import { HeroesInformationsService } from '../heroes-informations.service';
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.scss']
 })
-export class AccueilComponent implements OnInit{
+export class AccueilComponent{
 
 
   title = "Heroes Battle";
 
-  constructor (private router: Router,private heroeService: HeroesInformationsService){}
+  constructor (private router: Router){}
 
   select() {
     this.router.navigate(["/selection-perso"])
   }
 
-  ngOnInit(): void {
-    this.heroeService.OnInit()
-   }
+
 
 }
