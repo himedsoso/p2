@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataFinService } from './data-fin.service';
+
 @Component({
   selector: 'app-fin',
   templateUrl: './fin.component.html',
@@ -7,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class FinComponent {
 
-  isDisplayed : boolean = false;
+  
 
-  constructor (private router : Router) {}
+  constructor (private router : Router, public heroes: DataFinService) {}
+
+  
 
   returnHome() {
     return this.router.navigate(["/accueil"]);
@@ -17,9 +21,10 @@ export class FinComponent {
   startAgain(){
     return this.router.navigate(["/selection-perso"]);
   }
-  displayModal(){
-    this.isDisplayed = !this.isDisplayed
-  }
+  openModal(){
+    this.heroes.isModalDisplayed = !this.heroes.isModalDisplayed
+    this.heroes.getData()
+  
 
 }
-
+}

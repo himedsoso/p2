@@ -19,6 +19,7 @@ import { ProgressBarComponent } from './tools/progress-bar/progress-bar.componen
 import { TimelineFightComponent } from './tools/timeline-fight/timeline-fight.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalGaleryComponent } from './fin/modal-galery/modal-galery.component';
 
 
 
@@ -36,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProgressBarComponent,
     TimelineFightComponent,
     FooterComponent,
+    ModalGaleryComponent,
     
 
 
