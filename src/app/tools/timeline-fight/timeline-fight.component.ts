@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
+// import { EventEmitter } from 'stream';
 import { Perso } from '../../models/perso';
 
 
