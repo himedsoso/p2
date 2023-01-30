@@ -1,33 +1,36 @@
-<header class="header">
-    <!-- <img class="img" src="../../assets/header.jpg"
-        alt="heroes galery"> -->
-       <h1>{{title}}</h1> 
-</header>
-<main class="main">
+<body>
+    
+    <header class="header">
+    
+           <h1>{{title}}</h1> 
+    </header>
     <h1 class="h1">Sélection des personnages :</h1>
-    <div class="card">
-        <div class="card__hero-selected">
-            Component of heroes 1 here !
+    <main class="main">
+        
+        <div class="card">
+            <div class="card__hero-selected">
+                <app-card-heroe></app-card-heroe>
+            </div>
+            <div class="card__item-selected" >
+                Component of items 1 here !
+            </div>
         </div>
-        <div class="card__item-selected" >
-            Component of items 1 here !
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__hero-selected">
-            Component of heroes 2 here !
-        </div>
-        <div class="card__item-selected" >
-            Component of items 2 here !
-        </div>
-    </div>    
-    <a class="animated-button1" (click)="page3()">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Fight !
-  </a>
-
-</main>
+    
+        <div class="card">
+            <div class="card__hero-selected">
+               <app-card-heroe></app-card-heroe>
+            </div>
+            <div class="card__item-selected" >
+                Component of items 2 here !
+            </div>
+        </div>    
+        <a class="animated-button1" (click)="page3()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Fight !
+      </a>
+    
+    </main>
+</body>

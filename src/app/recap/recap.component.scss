@@ -1,5 +1,52 @@
 @media screen and (max-width: 640px) {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 img {
 
     display: flex;
@@ -187,33 +234,66 @@ button {
     margin-top: 5%;
     
 }
-.back {
-    position: absolute;
-    left: -160px;
-    width: 30vw;
-    height: 5vh;
-    background-color:rgb(185, 183, 183);
-    margin-top: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    
+.retro-button {
+  // position: absolute;
+  // left: -160px;
+  // width: 30vw;
+  // height: 5vh;
+  // background-color:rgb(185, 183, 183);
+  // margin-top: 1%;
+  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  // font-size: 25px;
+  
+  position:relative;
+  appearance:none;
+  box-sizing:border-box;
+  font-size:calc( var(--button-height) / 3 );
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+  height:var(--button-height);
+  min-width:var(--button-height);
+  border-radius:calc( var(--button-height) / 2);
+  border:0;
+  font-weight:800;
+  text-transform:uppercase;
+  color:var(--color-text);
+  text-shadow: 1px 1px var(--color-text-shadow);
+  cursor:pointer;
+  margin:6px 6px;
+  letter-spacing:.1em;
+  transition: all 200ms ease;
+  box-shadow:
+    -1px  -1px 1px var(--color-bg), //top highlight
+    0 0 0 4px var(--color-overlay-medium), //outer shadow
+    1px  1px 1px var(--color-bg-dark), //bottom lowlight
+    inset .0 .0 .0 var(--color-overlay-dark), //inset shadow    
+    inset .5rem .5rem .25rem var(--color-bg-light) //button gloss
+
+ 
 
 
 
 }
 
-.valid {
-    position: absolute;
-    left: 150px;
-    width: 30vw;
-    height: 5vh;
-    background-color:rgb(185, 183, 183);
-    margin-top: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-}
-}
+// .valid {
+//     position: absolute;
+//     left: 150px;
+//     width: 30vw;
+//     height: 5vh;
+//     background-color:rgb(185, 183, 183);
+//     margin-top: 1%;
+//     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//     font-size: 25px;
 
+ 
+// }
+
+
+
+
+
+
+}
 @media screen and (min-width: 641px) {
     // .red {
     //     height: 155vh;
@@ -445,36 +525,66 @@ table {
         opacity: 0;
         transition: opacity 0.4s ease-out;
     }
-    .bas {
-        // position: relative;
-        // height: 7vh;
-        // width: 100vw;
-        // background-color: #0c0c01;
-        // margin-top: 5%;
-    }
-    .back {
-        position: absolute;
-        left: -160px;
-        width: 30vw;
-        height: 5vh;
-        background-color:rgb(185, 183, 183);
-        margin-top: 1%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 25px;
+    // .bas {
+    //     // position: relative;
+    //     // height: 7vh;
+    //     // width: 100vw;
+    //     // background-color: #0c0c01;
+    //     // margin-top: 5%;
+    // }
+    .retro-button {
+        // position: absolute;
+        // left: -160px;
+        // width: 30vw;
+        // height: 5vh;
+        // background-color:rgb(185, 183, 183);
+        // margin-top: 1%;
+        // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        // font-size: 25px;
         
-    
-    
+        position:relative;
+        appearance:none;
+        box-sizing:border-box;
+        font-size:calc( var(--button-height) / 3 );
+        font-family: 'Open Sans', sans-serif;
+        background: var(--color-bg);
+        height:var(--button-height);
+        min-width:var(--button-height);
+        border-radius:calc( var(--button-height) / 2);
+        border:0;
+        font-weight:800;
+        text-transform:uppercase;
+        color:var(--color-text);
+        text-shadow: 1px 1px var(--color-text-shadow);
+        cursor:pointer;
+        margin:6px 6px;
+        letter-spacing:.1em;
+        transition: all 200ms ease;
+        box-shadow:
+          -1px  -1px 1px var(--color-bg), //top highlight
+          0 0 0 4px var(--color-overlay-medium), //outer shadow
+          1px  1px 1px var(--color-bg-dark), //bottom lowlight
+          inset .0 .0 .0 var(--color-overlay-dark), //inset shadow    
+          inset .5rem .5rem .25rem var(--color-bg-light) //button gloss
+      
+       
+      
+      
     
     }
     
-    .valid {
-        position: absolute;
-        left: 150px;
-        width: 30vw;
-        height: 5vh;
-        background-color:rgb(185, 183, 183);
-        margin-top: 1%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 25px;
+    // .valid {
+    //     position: absolute;
+    //     left: 150px;
+    //     width: 30vw;
+    //     height: 5vh;
+    //     background-color:rgb(185, 183, 183);
+    //     margin-top: 1%;
+    //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    //     font-size: 25px;
+    // }
+
+    
+
+
     }
-}
