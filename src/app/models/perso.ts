@@ -17,7 +17,7 @@ export class Perso {
     }
 
     damage(enemy: Perso) {
-        enemy.life -= 10;
+        enemy.life -= 10 + Math.floor(this.power * 0.1);
     }
 
     showLife() {
