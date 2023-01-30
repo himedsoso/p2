@@ -26,7 +26,7 @@ export class RecapComponent implements OnInit, OnDestroy {
 
 
   chargement(): void {
-    this.clear = setTimeout(() =>this.page3(), 8000)
+    this.clear = setTimeout(() =>this.page3(), 4000)
     
   }
 

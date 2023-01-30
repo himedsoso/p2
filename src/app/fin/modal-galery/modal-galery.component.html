@@ -1,0 +1,38 @@
+<i class="fa-regular fa-rectangle-xmark" id="close-icon" (click)="hideModal()"></i>
+<div id="galery">
+    <li  *ngFor="let data of heroesDisplayed">
+        <div class="heroes_cards">
+            <div class="portrait">
+                <div class="hero_image">
+                    <img [src]="data.images.sm" alt="`image of {{data.name}}`">
+                </div>
+                <p>{{data.name}}</p>
+            </div>
+            <div class="stats">
+                <p>Strength</p>
+                <div class="max_value">
+                    <div class="current" [ngStyle]="{width:data.powerstats.strength | json}"></div>
+                </div>
+                <p>Speed</p>
+                <div class="max_value">
+                    <div class="current" [ngStyle]="{width:data.powerstats.speed}"></div>
+                </div>
+                <p>Durability</p>
+                <div class="max_value">
+                    <div class="current" [ngStyle]="{width:data.powerstats.durability}"></div>
+                </div>
+                <p>Combat</p>
+                <div class="max_value">
+                    <div class="current" [ngStyle]="{width:data.powerstats.combat}"></div>
+                </div>
+            </div>
+        </div>
+    </li>
+</div>
+<div id="button">
+    <button (click)="displayAllHeroes()" >Display all Heroes</button>
+    <button (click)="displayOnlyHumanHeroes()">Display all Humans Heroes</button>
+    <button (click)="displayOnlyNonHumanHeroes()">Display all Non-Humans Heroes</button>
+</div>
+
+
