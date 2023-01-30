@@ -9,6 +9,7 @@
 
 //   constructor(private http: HttpClient) { }
 
+<<<<<<< HEAD
 // getData(){
 //   return this.http.get("https://akabab.github.io/superhero-api/api/all.json")
 // }
@@ -18,6 +19,17 @@
 //     346, 717, 720, 727
 //   ]
 // }
+=======
+getData(){
+  return this.http.get("https://akabab.github.io/superhero-api/api/all.json")
+}
+// 1er liste de perso a prendre:
+  idsUsable = [
+    58, 63, 70, 73, 145, 149, 151, 242, 265, 275, 333, 345, 547, 687, 731,
+    346, 717, 720, 727
+  ]
+
+>>>>>>> c99cc7dab7579c733d070dbc629414334aea32f2
 
 //   linkApi: string = "https://akabab.github.io/superhero-api/api/all.json";
 
