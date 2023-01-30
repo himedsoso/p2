@@ -39,7 +39,14 @@ h1 {
   align-items: space-around;
   gap: 10px;
 
-  &__hero-selected {
+  &__heroe-position{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  &__heroe-selected {
     // background-color: aqua;
     max-width: 300px;
     max-height: 250px;
@@ -47,6 +54,27 @@ h1 {
     flex: 6;
     overflow: hidden;
 
+  }
+
+  &__back{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #d4e0f738;
+    color: #ccb97f;
+  }
+  
+  &__next{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #d4e0f738;
+    color: #ccb97f;
+    
   }
 
   &__item-selected {

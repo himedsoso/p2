@@ -11,7 +11,9 @@ import { DataService } from '../data.service';
 export class PageSelectionCharactersComponent implements OnInit {
   constructor(private router: Router, private data: DataService, private heroeService :HeroesInformationsService) { }
 
-  title = this.data.title
+  title = this.data.title;
+  arrOneOfComponentHeroe!:any[]
+  arrTwoOfComponentHeroe!:any[]
 
   page3(): void {
     this.router.navigate(["/recap"]);
@@ -21,6 +23,14 @@ export class PageSelectionCharactersComponent implements OnInit {
   ngOnInit(): void {
     this.heroeService.OnInit()
    }
+
+   changeHeroe1(heroes1ListOfParent:any){
+    this.arrOneOfComponentHeroe.push(heroes1ListOfParent)
+    console.log(this.arrOneOfComponentHeroe)
+   }
+   changeHeroe2(heroes2ListOfParent:any){
+    this.arrOneOfComponentHeroe.push(heroes2ListOfParent)
+    console.log(this.arrTwoOfComponentHeroe)
+   }
    
 }
-

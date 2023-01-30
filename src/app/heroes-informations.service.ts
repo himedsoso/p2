@@ -13,8 +13,9 @@ export class HeroesInformationsService {
 
   fullRandomHeroes: any;
 
-  heroe1: any;
-  heroe2: any;
+  figthers: any[]=[]
+  heroe1:any=this.figthers[0]
+  heroe2:any=this.figthers[1]
 
   // A l'affichage de la page d'accueil
   OnInit() {
@@ -22,29 +23,17 @@ export class HeroesInformationsService {
   
   };
 
-  // on recupére les info de l'API au démarage 
-  // dataApi(linkApi: any) {
-  //   linkApi.subscribe((apiHeroes: any) => this.randomCard(apiHeroes))
-  // };
-
   // On recupére 20 perso aléatoirement 
   randomCard(apiHeroes: any) {
     const randomHeroesArr = [];
     for (let i = 0; i < 2; i++) {
       randomHeroesArr.push(apiHeroes[Math.floor(Math.random() * 563)]);
     }
-    // this.getRandomHeroes(randomHeroesArr);
   }
 
-  //  on stock les infos des perso via une fonction async (getRandomHeroes) dans un tableau (randomHeroes)
-  // async getRandomHeroes(randomHeroesArr: any) {
-
-  //   this.heroe1 = await randomHeroesArr[0];
-  //   this.heroe2 = await randomHeroesArr[1];
-  //   this.fullRandomHeroes = await randomHeroesArr;
-  //   console.log(this.fullRandomHeroes)
-
-  // }
+  heroesSelected(heroeSelected:any):void{
+    this.figthers.push(heroeSelected)
+  }
 
 
 

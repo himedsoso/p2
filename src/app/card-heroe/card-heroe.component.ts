@@ -1,4 +1,4 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, EventEmitter, Injectable, OnInit, Output } from '@angular/core';
 import { HeroesInformationsService } from '../heroes-informations.service';
 
 
@@ -13,8 +13,15 @@ export class CardHeroeComponent implements OnInit {
 
   constructor(private heroes: HeroesInformationsService, private window: Window) { }
 
-   randomHeroes: any;
+  @Output()
+  ChangeHeroe: EventEmitter<any> = new EventEmitter();
 
+sendDataToParent(): void {
+  this.ChangeHeroe.emit(this.randomHeroes);
+}
+
+   randomHeroes: any;
+   selected:number=0
 
   // on regarde la taille de l'écran l'ors du démarrage 
   windowWidth(): boolean {
@@ -33,7 +40,7 @@ export class CardHeroeComponent implements OnInit {
     // On recupére 20 perso aléatoirement 
     randomCard(apiHeroes: any) {
       const randomHeroesArr = []
-      for (let i = 0; i < 1; i++) {
+      for (let i = 0; i < 2; i++) {
         randomHeroesArr.push(apiHeroes[Math.floor(Math.random() * 563)])
       }
       this.getRandomHeroes(randomHeroesArr)
@@ -45,11 +52,7 @@ export class CardHeroeComponent implements OnInit {
       this.randomHeroes = await randomHeroesArr
     }
   
-  // ngOnInit(): void {
-    
-  //   this.randomHeroes = this.heroes.fullRandomHeroes;
 
-  // }
 
   
 }

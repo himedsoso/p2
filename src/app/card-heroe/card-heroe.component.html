@@ -1,15 +1,15 @@
-<div *ngFor="let randomHeroe of randomHeroes ; let index = index">
+<div >
  <div >
     <div class="img">
-        <img *ngIf="windowWidth()" [src]="randomHeroe.images.md " [alt]="randomHeroe.biography.fullName ">
-        <img *ngIf="!windowWidth()" [src]="randomHeroe.images.sm " [alt]="randomHeroe.biography.fullName ">
+        <img *ngIf="windowWidth()" [src]="randomHeroes[selected].images.md " [alt]="randomHeroes[selected].biography.fullName ">
+        <img *ngIf="!windowWidth()" [src]="randomHeroes[selected].images.sm " [alt]="randomHeroes[selected].biography.fullName ">
     </div>
-    <div class="stats">
-        <p>HP:{{randomHeroe.powerstats.durability  }} </p>
-        <p>Speed:{{randomHeroe.powerstats.speed }} </p>
-        <p>Power:{{randomHeroe.powerstats.power }} </p>
-        <p>Combat:{{randomHeroe.powerstats.combat }} </p>
-    </div>
+    <!-- <div class="stats">
+        <p>HP:{{randomHeroes[selected].powerstats.durability  }} </p>
+        <p>Speed:{{randomHeroes[selected].powerstats.speed }} </p>
+        <p>Power:{{randomHeroes[selected].powerstats.power }} </p>
+        <p>Combat:{{randomHeroes[selected].powerstats.combat }} </p>
+    </div> -->
     
  </div>
 </div>
