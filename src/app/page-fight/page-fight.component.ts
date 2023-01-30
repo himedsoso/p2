@@ -1,9 +1,6 @@
-
 import { Router } from '@angular/router'
-
 import { Component, Input } from '@angular/core';
-
-
+import { MatProgressBar } from '@angular/material/progress-bar'; 
 
 
 @Component({
@@ -18,8 +15,5 @@ export class PageFightComponent {
 page4():void{
   this.router.navigate(["/winner"]);
 }
-
-
-  
 
 }

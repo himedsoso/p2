@@ -16,13 +16,4 @@ getData(){
     58, 63, 70, 73, 145, 149, 151, 242, 265, 275, 333, 345, 547, 687, 731,
     346, 717, 720, 727
   ]
-
 }
-
-// code a mettre dans le component qui doit affiché les perso! 
-    // listOfHeroes:any
-  
-  // ngOnInit() {
-  // this.heroes.getData().subscribe(list => this.listOfHeroes=list)
-  // }
-// fin du code
