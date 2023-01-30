@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
+// import { EventEmitter } from 'stream';
 import { Perso } from '../../models/perso';
 
 
@@ -9,6 +9,8 @@ import { Perso } from '../../models/perso';
   styleUrls: ['./timeline-fight.component.scss']
 })
 export class TimelineFightComponent implements OnInit{
+  // Variables
+  dodged: boolean = false;
   title = 'app-material2';
   timelinePerso1 = 0;
   timelinePerso2 = 0;
@@ -58,6 +60,22 @@ export class TimelineFightComponent implements OnInit{
     }
   }
 
+  // ------------ fonction des combats ----------
+    fight() {
+        if (this.perso1.isAlive() && this.perso2.isAlive()) {
+        // commencement du fight
+            if (this.perso1.speed > this.perso2.speed) {
+                this.perso1.punch();
+                this.perso1.damage(this.perso2);
+                this.perso2.showLife();
+            } else {
+                this.perso2.punch();
+                this.perso2.damage(this.perso1);
+                this.perso1.showLife();
+            } 
+        }
+
+
+    }
 
 }
-

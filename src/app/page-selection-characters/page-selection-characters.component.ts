@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HeroesInformationsService } from 'src/app/heroes-informations.service';
+// import { HeroesInformationsService } from 'src/app/heroes-informations.service';
 import { DataService } from '../data.service';
 
 @Component({
@@ -19,7 +19,7 @@ export class PageSelectionCharactersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.heroeService.OnInit()
+    // this.heroeService.OnInit()
    }
    
 
