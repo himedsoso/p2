@@ -3,11 +3,12 @@
     <h2>The End</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum vitae quam esse autem ipsam qui in neque temporibus a at id nulla, nihil optio assumenda eveniet incidunt doloremque? Necessitatibus, excepturi?</p>
 </div>
-<div *ngIf="this.isDisplayed">
 
-</div>
+    <app-modal-galery id="modal" *ngIf="heroes.isModalDisplayed"></app-modal-galery>
+
+
 <footer>
     <button (click)="returnHome()">Home</button>
-    <button (click)="[displayModal()]">galerie</button>
+    <button (click)="openModal()">galerie</button>
     <button (click)="startAgain()">Restart</button>
 </footer>

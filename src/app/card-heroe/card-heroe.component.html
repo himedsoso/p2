@@ -1,15 +1,20 @@
-<div >
- <div >
+<div class="card">
+    <button class="back" (click)="backPerso()">
+        <span>B</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+    </button>
     <div class="img">
-        <img *ngIf="windowWidth()" [src]="randomHeroes[selected].images.md " [alt]="randomHeroes[selected].biography.fullName ">
-        <img *ngIf="!windowWidth()" [src]="randomHeroes[selected].images.sm " [alt]="randomHeroes[selected].biography.fullName ">
+        <img *ngIf="windowWidth()" [src]="randomHeroes[selected].images.md "
+            [alt]="randomHeroes[selected].biography.fullName ">
+        <img *ngIf="!windowWidth()" [src]="randomHeroes[selected].images.sm "
+            [alt]="randomHeroes[selected].biography.fullName ">
     </div>
-    <!-- <div class="stats">
-        <p>HP:{{randomHeroes[selected].powerstats.durability  }} </p>
-        <p>Speed:{{randomHeroes[selected].powerstats.speed }} </p>
-        <p>Power:{{randomHeroes[selected].powerstats.power }} </p>
-        <p>Combat:{{randomHeroes[selected].powerstats.combat }} </p>
-    </div> -->
-    
- </div>
+    <button class="next" (click)="nextPerso()">
+        <span>N</span>
+        <span>e</span>
+        <span>x</span>
+        <span>t</span>
+    </button>
 </div>

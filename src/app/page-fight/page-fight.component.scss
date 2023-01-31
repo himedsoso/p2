@@ -38,9 +38,23 @@
     }
 }
 
+.desc {
+    margin: 0 20px;
+    width: 100%;
+    height: 10px;
+}
+
 .progress-fight {
     margin: 0 10px;
     box-sizing: border-box;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;  
 }
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }

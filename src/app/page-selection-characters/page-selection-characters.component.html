@@ -10,22 +10,12 @@
         <div class="card">
             <div class="card__heroe-position">
 
-                <button class="card__back">
-                  <span>B</span>  
-                  <span>a</span>  
-                  <span>c</span>  
-                  <span>k</span>
-                </button>
+
 
                 <div class="card__heroe-selected">
                     <app-card-heroe  (ChangeHeroe)="changeHeroe1($event)"></app-card-heroe>
                 </div>
-                <button class="card__next">
-                    <span>N</span>  
-                    <span>e</span>  
-                    <span>x</span>  
-                    <span>t</span>
-                </button>
+
             </div>
             <div class="card__item-selected">
                 Component of items 1 here !
@@ -35,28 +25,17 @@
         <div class="card">
             <div class="card__heroe-position">
                 
-                <button class="card__back">
-                    <span>B</span>  
-                    <span>a</span>  
-                    <span>c</span>  
-                    <span>k</span>
-                </button>
                 
                 <div class="card__heroe-selected">
                     <app-card-heroe  (ChangeHeroe)="changeHeroe2($event)"></app-card-heroe>
                 </div>
-                <button class="card__next">
-                    <span>N</span>  
-                    <span>e</span>  
-                    <span>x</span>  
-                    <span>t</span>
-                </button>
+
             </div>
             <div class="card__item-selected">
                 Component of items 2 here !
             </div>
         </div>
-        <a class="animated-button1" (click)="page3()">
+        <a class="animated-button1" (click)="page3();saveHero(heroeComponent1,heroeComponent2)">
             <span></span>
             <span></span>
             <span></span>

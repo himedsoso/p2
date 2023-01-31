@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { MatProgressBar } from '@angular/material/progress-bar'; 
 
 
 
@@ -10,6 +9,6 @@ import { MatProgressBar } from '@angular/material/progress-bar';
 })
 export class ProgressBarComponent {
   color: string = 'red';
-  value: number = 80;
+  value: number = 100;
   
 }

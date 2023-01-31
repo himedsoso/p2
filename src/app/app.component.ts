@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataFinService } from './fin/data-fin.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'projet2';
+  title = 'projet2';  
 }
