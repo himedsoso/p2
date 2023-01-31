@@ -23,10 +23,10 @@ export class PageSelectionCharactersComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.heroeService.OnInit()
     // console.log(this.heroeComponent1)
     // console.log(this.heroeComponent2)
-
    }
 
    changeHeroe1(heroes1ToParent:object){
