@@ -1,0 +1,25 @@
+.back{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #d4e0f738;
+    color: #ccb97f;
+  }
+  
+.next{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #d4e0f738;
+    color: #ccb97f;
+    
+  }
+
+  .card{
+    display: flex;
+    flex-direction:row;
+  }

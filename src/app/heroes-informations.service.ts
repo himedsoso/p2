@@ -6,12 +6,20 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HeroesInformationsService {
+<<<<<<< HEAD
 
   constructor(private http: HttpClient) { }
+=======
+
+  constructor(private http: HttpClient) { }
+
+
+>>>>>>> 775f463fa551c3f090f2bd0eea3548784a283615
 
 getData(){
   return this.http.get("https://akabab.github.io/superhero-api/api/all.json")
 }
+<<<<<<< HEAD
 // 1er liste de perso a prendre:
   idsUsable = [
     58, 63, 70, 73, 145, 149, 151, 242, 265, 275, 333, 345, 547, 687, 731,
@@ -69,4 +77,31 @@ getData(){
 
 
 }
+=======
+  
+  linkApi: string = "https://akabab.github.io/superhero-api/api/all.json";
+  
+  fullRandomHeroes: any;
+  
+  figthers: any[]=[];
+  heroe1!:object;
+  heroe2!:object;
+  
+  // A l'affichage de la page d'accueil
+  OnInit() {
+    return this.http.get(this.linkApi);
+    
+  };
 
+  
+  heroesSelected(heroeSelected1:object,heroeSelected2:object):void{
+    this.heroe1=heroeSelected1
+    this.heroe2=heroeSelected2
+    console.log(this.heroe1)
+    console.log(this.heroe2)
+  }
+    
+>>>>>>> 775f463fa551c3f090f2bd0eea3548784a283615
+
+  
+}
