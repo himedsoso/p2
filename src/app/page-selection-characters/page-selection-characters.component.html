@@ -1,36 +1,47 @@
 <body>
-    
+
     <header class="header">
-    
-           <h1>{{title}}</h1> 
+
+        <h1>{{title}}</h1>
     </header>
     <h1 class="h1">Sélection des personnages :</h1>
     <main class="main">
-        
+
         <div class="card">
-            <div class="card__hero-selected">
-                <app-card-heroe></app-card-heroe>
+            <div class="card__heroe-position">
+
+
+
+                <div class="card__heroe-selected">
+                    <app-card-heroe  (ChangeHeroe)="changeHeroe1($event)"></app-card-heroe>
+                </div>
+
             </div>
-            <div class="card__item-selected" >
+            <div class="card__item-selected">
                 Component of items 1 here !
             </div>
         </div>
-    
+        
         <div class="card">
-            <div class="card__hero-selected">
-               <app-card-heroe></app-card-heroe>
+            <div class="card__heroe-position">
+                
+                
+                <div class="card__heroe-selected">
+                    <app-card-heroe  (ChangeHeroe)="changeHeroe2($event)"></app-card-heroe>
+                </div>
+
             </div>
-            <div class="card__item-selected" >
+            <div class="card__item-selected">
                 Component of items 2 here !
             </div>
-        </div>    
-        <a class="animated-button1" (click)="page3()">
+        </div>
+        <a class="animated-button1" (click)="page3();saveHero(heroeComponent1,heroeComponent2)">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Fight !
-      </a>
-    
+        </a>
+
     </main>
 </body>
