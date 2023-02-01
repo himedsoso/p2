@@ -37,7 +37,7 @@ export class RecapComponent implements OnInit, OnDestroy {
 
 
   chargement(): void {
-    this.clear = setTimeout(() =>this.page3(), 40000000000)
+    this.clear = setTimeout(() =>this.page3(), 4000)
     
   }
 
@@ -61,6 +61,6 @@ export class RecapComponent implements OnInit, OnDestroy {
 }
 
 
-
+//commentaire à mettre
 
 
