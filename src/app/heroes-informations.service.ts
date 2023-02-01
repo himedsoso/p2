@@ -9,13 +9,14 @@ export class HeroesInformationsService {
 
   constructor(private http: HttpClient) { }
 
+
   
   linkApi: string = "https://akabab.github.io/superhero-api/api/all.json";
   
   fullRandomHeroes: any;
   
   figthers: any[]=[];
-  heroe1!:object;
+  heroe1:object;
   heroe2!:object;
   
   // A l'affichage de la page d'accueil
