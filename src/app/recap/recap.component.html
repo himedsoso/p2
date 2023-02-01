@@ -31,7 +31,7 @@
 </div>
 
 <div class="perso1">
-
+<img *ngIf="heroeService.heroe1" [src]="heroeService.heroe1['images'].md" alt="">
 </div>
 <div class="arme1">
 
@@ -40,7 +40,8 @@
   
 </div>
 <div class="perso2"
-></div>
+>
+<img *ngIf="heroeService.heroe2" [src]="heroeService.heroe2['images'].md" alt=""></div>
 
 <div class="arme2">
 
