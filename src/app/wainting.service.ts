@@ -1,10 +1,17 @@
+
+
 import { HttpClient } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WaintingService {
+
+
+  constructor() { }
+
   heroes1 : number = 70;
   heroes2 : number = 149;
 
@@ -18,4 +25,5 @@ export class WaintingService {
   api2() {
     this.apelleApi
   }
+
 }
