@@ -1,22 +1,33 @@
 <div class="main">
-    <div class="main__perso--right">
-        <div class="perso perso--right">
-            <img class="perso__img" src="https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg" alt="">
+    <div class="main__perso--left">
+        <div class="perso perso--left">
+            <img class="perso__img" [src]="hero1.images.md" alt="">
             <div class="desc">
-                <p>Life</p>
+                <p class="desc__text"><span class="desc__name">{{ hero1.name  }}</span></p>
+                <p class="desc__text">Intelligence : <span class="desc__stats">{{ hero1.powerstats.intelligence }}</span></p>
+                <p class="desc__text">Strength : <span class="desc__stats">{{ hero1.powerstats.strength }}</span></p>
+                <p class="desc__text">Speed : <span class="desc__stats">{{ hero1.powerstats.speed }}</span></p>
+                <p class="desc__text">Durability : <span class="desc__stats">{{ hero1.powerstats.durability }}</span></p>
+                <p class="desc__text">Power : <span class="desc__stats">{{ hero1.powerstats.power }}</span></p>
+                <p class="desc__text">Combat : <span class="desc__stats">{{ hero1.powerstats.combat }}</span></p>
             </div>
         </div>
     </div>
     <div class="progress-fight">
-        <span>Progress Fight</span>
-        <app-timeline-fight></app-timeline-fight>
+        <span></span>
     </div>
-   <div class="main__perso--left">
-        <div class="perso">
-            <img class="perso__img" src="https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg" alt="">
+   <div class="main__perso--right">
+        <div class="perso perso--right">
+            <img class="perso__img" [src]="hero2.images.md" alt="">
             
             <div class="desc">
-                <p>Life</p>
+                <p class="desc__text"><span class="desc__name">{{ hero2.name }}</span></p>
+                <p class="desc__text">Intelligence : <span class="desc__stats">{{ hero2.powerstats.intelligence }}</span></p>
+                <p class="desc__text">Strength : <span class="desc__stats">{{ hero2.powerstats.strength }}</span></p>
+                <p class="desc__text">Speed : <span class="desc__stats">{{ hero2.powerstats.speed }}</span></p>
+                <p class="desc__text">Durability : <span class="desc__stats">{{ hero2.powerstats.durability }}</span></p>
+                <p class="desc__text">Power : <span class="desc__stats">{{ hero2.powerstats.power }}</span></p>
+                <p class="desc__text">Combat : <span class="desc__stats">{{ hero2.powerstats.combat }}</span></p>
             </div>
         </div>
    </div>
