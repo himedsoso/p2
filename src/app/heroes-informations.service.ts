@@ -9,8 +9,10 @@ export class HeroesInformationsService {
 
   constructor(private http: HttpClient) { }
 
+  getData(){
+    return this.http.get("https://akabab.github.io/superhero-api/api/all.json")
+  }
 
-  
   linkApi: string = "https://akabab.github.io/superhero-api/api/all.json";
   
   fullRandomHeroes: any;
@@ -32,7 +34,5 @@ export class HeroesInformationsService {
     console.log(this.heroe1)
     console.log(this.heroe2)
   }
-
-  
 }
 

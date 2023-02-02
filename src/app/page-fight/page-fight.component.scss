@@ -11,7 +11,7 @@
 
         &--right {
             display: flex;
-            justify-content: right;
+            justify-content: flex-end;
             margin-right: 10px;
         }
 
@@ -28,6 +28,7 @@
     box-sizing: border-box;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;  
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
 
     &__img {
         height: 30vh;
@@ -41,7 +42,24 @@
 .desc {
     margin: 0 20px;
     width: 100%;
-    height: 10px;
+    height: 100%;
+
+    &__text{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__name {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    &__stats {
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
 }
 
 .progress-fight {
@@ -51,10 +69,4 @@
     box-shadow: lightgray 4px 4px 20px;  
 }
 
-@keyframes tilt-shaking {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0eg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-  }
+
