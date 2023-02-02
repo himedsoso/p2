@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalGaleryComponent } from './fin/modal-galery/modal-galery.component';
 import { CardHeroeComponent } from './card-heroe/card-heroe.component';
+import { CardSelectionWeaponComponent } from './card-selection-weapon/card-selection-weapon.component';
 
 
 
@@ -40,7 +41,8 @@ import { CardHeroeComponent } from './card-heroe/card-heroe.component';
     FooterComponent,
     ModalGaleryComponent,
     
-    CardHeroeComponent
+    CardHeroeComponent,
+         CardSelectionWeaponComponent
 
 
   ],

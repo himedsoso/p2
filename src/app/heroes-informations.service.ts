@@ -9,30 +9,36 @@ export class HeroesInformationsService {
 
   constructor(private http: HttpClient) { }
 
-  getData(){
-    return this.http.get("https://akabab.github.io/superhero-api/api/all.json")
-  }
-
+  
   linkApi: string = "https://akabab.github.io/superhero-api/api/all.json";
   
-  fullRandomHeroes: any;
-  
-  figthers: any[]=[];
-  heroe1:object;
+
+  heroe1!:object;
   heroe2!:object;
+  weaponHeroe1!:object;
+  weaponHeroe2!:object;
   
-  // A l'affichage de la page d'accueil
+  // A l'affichage de la page de selection des personnage on appel l'api
   OnInit() {
     return this.http.get(this.linkApi);
-    
   };
-
   
+  weaponApi(){
+    return this.http.get("../assets/weapon.json")
+  }
+
+
+  // récuperation des données des 2 hero séléctionnés dans la page sélection des personnage.
   heroesSelected(heroeSelected1:object,heroeSelected2:object):void{
     this.heroe1=heroeSelected1
     this.heroe2=heroeSelected2
-    console.log(this.heroe1)
-    console.log(this.heroe2)
   }
+  
+  // récuperation des données des 2 armes séléctionnés dans la page sélection des personnage.
+  weaponSelected(weaponSelected1:object,weaponSelected2:object):void{
+    this.weaponHeroe1=weaponSelected1
+    this.weaponHeroe2=weaponSelected2
+  }
+
 }
 

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "No weapon",
+    "description": "Figth without weapon.",
+    "img": "assets/weapon/SansArmes.jpeg"
+  },
+  {
+    "name": "Toilet paper",
+    "description": "Increase or decrease a random stat.",
+    "img": "assets/weapon/PapierToilette.jpeg"
+  },
+  {
+    "name": "Poêle",
+    "description": "Increase life-max.",
+    "img": "assets/weapon/Poêle.jpeg"
+  },
+  {
+    "name": "Cakes",
+    "description": "Increase strength.",
+    "img": "assets/weapon/Cake.jpg"
+  },
+  {
+    "name": "Pc",
+    "description": "Increase intelligence.",
+    "img": "assets/weapon/OrdinateurPortable.jpeg"
+  },
+  {
+    "name": "Kunai",
+    "description": "Increase speed.",
+    "img": "assets/weapon/Kunai.jpg"
+  },
+  {
+    "name": "Nunchaku",
+    "description": "Increase combat capacity.",
+    "img": "assets/weapon/Nunchaku.jpeg"
+  },
+  {
+    "name": "Garden gnome",
+    "description": "Increase random capacity.",
+    "img": "assets/weapon/Nain de jardin.webp"
+  },
+  {
+    "name": "Molotov",
+    "description": "Try it, but is dangerous.",
+    "img": "assets/weapon/CocktailMolotov.jpg"
+  }
+]

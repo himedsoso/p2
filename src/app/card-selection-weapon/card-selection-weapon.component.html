@@ -1,0 +1,28 @@
+<div class="card">
+    <button class="back" (click)="backWeapon()">
+        <!-- <span>B</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span> -->
+        <
+    </button>
+    <div class="info">
+        
+        <div class="name">
+            {{weapons[selected].name}}
+        </div>
+        <div class="img">
+            <img src={{weapons[selected].img}} [alt]="weapons[selected].name ">
+        </div>
+        <div class="description">
+            {{weapons[selected].description}}
+        </div>
+    </div>
+    <button class="next" (click)="nextWeapon()">
+        <!-- <span>N</span>
+        <span>e</span>
+        <span>x</span>
+        <span>t</span> -->
+        >
+    </button>
+</div>

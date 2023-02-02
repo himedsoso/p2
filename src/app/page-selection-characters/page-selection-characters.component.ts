@@ -12,35 +12,46 @@ export class PageSelectionCharactersComponent implements OnInit {
 
   constructor(private router: Router, private data: DataService, private heroeService :HeroesInformationsService){}
 
+  // Récuperation du titre.
   title = this.data.title;
 
-  heroeComponent1!:object
-  heroeComponent2!:object
+// Stockage des heros choisis dans le composent enffant.
+heroeComponent1!:object
+heroeComponent2!:object
 
-  page3(): void {
-    this.router.navigate(["/recap"]);
-   
+// Stockage des armes choisis dans le composent enffant.
+  weaponComponent1!:object
+  weaponComponent2!:object
+
+  // A l'initialisation du composent on appel le service qui contien l'api.
+  ngOnInit(): void {
+    this.heroeService.OnInit()
+  }
+  
+  // On stock les données envoyer par les composents enffants.
+  changeHeroe1(heroes1ToParent:object){
+    this.heroeComponent1 = heroes1ToParent
+  }
+  changeHeroe2(heroes2ToParent:object){
+    this.heroeComponent2 = heroes2ToParent
   }
 
-  ngOnInit(): void {
+  changeWeapon1(weapon1ToParent:object){
+    this.heroeComponent1 = weapon1ToParent
+  }
+  changeWeapon2(weapon2ToParent:object){
+    this.heroeComponent2 = weapon2ToParent
+  }
 
-    this.heroeService.OnInit()
-    // console.log(this.heroeComponent1)
-    // console.log(this.heroeComponent2)
-   }
-
-   changeHeroe1(heroes1ToParent:object){
-    this.heroeComponent1 = heroes1ToParent
-    // console.log(this.heroeComponent1)
-   }
-   changeHeroe2(heroes2ToParent:object){
-    this.heroeComponent2 = heroes2ToParent
-    // console.log(this.heroeComponent2)
-   }
-
-   saveHero(hero1:object,hero2:object){
-     this.heroeService.heroesSelected(hero1,hero2)
-
-   }
+  // Au clique on change de page et on envoie les personnages et les armes sélectionnées dans le service.
+  page3(): void {
+    this.router.navigate(["/recap"]);
+  }
+  saveHero(hero1:object,hero2:object){
+    this.heroeService.heroesSelected(hero1,hero2)
+  }
+  saveWeapon(WeaponHero1:object,weaponHero2:object){
+    this.heroeService.weaponSelected(WeaponHero1,weaponHero2)
+  }
    
 }

@@ -2,40 +2,43 @@
 
     <header class="header">
 
-        <h1>{{title}}</h1>
+        <h1 class="neon">{{title}}</h1>
+        <div class="h2">
+            <h2 class="neon">Select Heroes</h2>
+        </div>
+
     </header>
-    <h1 class="h1">Sélection des personnages :</h1>
+
     <main class="main">
 
         <div class="card">
             <div class="card__heroe-position">
 
-
-
-                <div class="card__heroe-selected">
-                    <app-card-heroe  (ChangeHeroe)="changeHeroe1($event)"></app-card-heroe>
+                <div class="card__heroe-selected radius">
+                    <app-card-heroe (ChangeHeroe)="changeHeroe1($event)"></app-card-heroe>
                 </div>
 
             </div>
             <div class="card__item-selected">
-                Component of items 1 here !
+                <app-card-selection-weapon (ChangeWeapon)="changeWeapon1($event)"></app-card-selection-weapon>
             </div>
         </div>
-        
+
         <div class="card">
             <div class="card__heroe-position">
-                
-                
+
+
                 <div class="card__heroe-selected">
-                    <app-card-heroe  (ChangeHeroe)="changeHeroe2($event)"></app-card-heroe>
+                    <app-card-heroe (ChangeHeroe)="changeHeroe2($event)"></app-card-heroe>
                 </div>
 
             </div>
             <div class="card__item-selected">
-                Component of items 2 here !
+                <app-card-selection-weapon (ChangeWeapon)="changeWeapon2($event)"></app-card-selection-weapon>
             </div>
         </div>
-        <a class="animated-button1" (click)="page3();saveHero(heroeComponent1,heroeComponent2)">
+        <a class=" animated-button1"
+            (click)="page3();saveHero(heroeComponent1,heroeComponent2);saveWeapon(weaponComponent1,weaponComponent2)">
             <span></span>
             <span></span>
             <span></span>
