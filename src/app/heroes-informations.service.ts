@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class HeroesInformationsService {
 
   constructor(private http: HttpClient) { }
+
   
   linkApi: string = "https://akabab.github.io/superhero-api/api/all.json";
   
@@ -38,7 +39,6 @@ export class HeroesInformationsService {
     this.weaponHeroe1=weaponSelected1
     this.weaponHeroe2=weaponSelected2
   }
-    
-
 
 }
+
