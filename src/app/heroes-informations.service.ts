@@ -15,8 +15,8 @@ export class HeroesInformationsService {
 
   heroe1!:object;
   heroe2!:object;
-  weaponHeroe1!:object;
-  weaponHeroe2!:object;
+  weaponHeroe1!:any;
+  weaponHeroe2!:any;
   
   // A l'affichage de la page de selection des personnage on appel l'api
   OnInit() {

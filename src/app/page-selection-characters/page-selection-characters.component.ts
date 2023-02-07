@@ -37,10 +37,10 @@ heroeComponent2!:object
   }
 
   changeWeapon1(weapon1ToParent:object){
-    this.heroeComponent1 = weapon1ToParent
+    this.weaponComponent1 = weapon1ToParent
   }
   changeWeapon2(weapon2ToParent:object){
-    this.heroeComponent2 = weapon2ToParent
+    this.weaponComponent2 = weapon2ToParent
   }
 
   // Au clique on change de page et on envoie les personnages et les armes sélectionnées dans le service.
