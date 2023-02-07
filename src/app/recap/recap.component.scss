@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 415px) {
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,104 +47,44 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 img {
-
-    display: flex;
-    justify-content: center;
-    
-    max-width: 100%;
-    max-height: 100%;
-    align-items: center;
-    position: relative;
-    // width: 96vw;
-    // height: 100vh;
-}
-// .red {
-//     height: 155vh;
-//     width: 80vw;
-//     background-color: red;
-//     transform : rotate(20deg);
-//     position: absolute;
-//     right: 35%;
-//    bottom: 6%;
-    
-    
-// }
-// .blue {
-//     height: 155vh;
-//     width: 80vw;
-//     transform : rotate(20deg);
-//     position: absolute;
-//     right: -42%;
-//     bottom: -10%;
-//     background-color:blue;
-
-
-    
-    
-    
-
-// }
-// .trait {
-//     width: 0.8vw;
-//     height: 100vh;
-//     background-color: #0c0c01;
-//     transform : rotate(20deg);
-//     position: absolute;
-//     margin-left: 47%;
-//     margin-top: -5%;
-
-// }
-// .versus {
-//     display: flex;
-//     justify-content: center;
-    
-// }
-// .vs {
-//    width: 50vw;
-//    margin-top: 35%;
-//    position: absolute;
-// }
-
-
-.perso1 {
-    background-color: rgb(30, 77, 77);
-    width: 35vw;
-    height: 20vh;
-    position: relative;
-    margin-left: 2%;
-    // margin-top: -150%;
-    
-   
+    width: 100%;
+    height: 100vh;
    
 }
 
-.arme1 {
-    background-color:rgb(145, 194, 184);
-    width: 35vw;
-    height: 15vh;
+
+
+
+.her1 {
+    width: 35%;
+    height: 15%;
     margin-left: 2%;
-    position: relative;
-    
 }
 
-.perso2 {
-    background-color:rgb(30, 77, 77);
-    width: 35vw;
-    height: 20vh;
+.weap1 {
+    width: 35%;
+    height: 5%;
+    margin-left: 2%;
+}
+
+
+.her2 {
+    width: 35%;
+    height: 15%;
     margin-left: 61%;
-    margin-top: 15%;
-    position: relative;
 }
 
-.arme2 {
 
-    background-color:rgb(145, 194, 184);
-    width: 35vw;
-    height: 15vh;
+.weap2 {
+    width: 35%;
+    height: 5%;
     margin-left: 61%;
-    position: relative;
 }
+
+
 
 button {
     margin-left: 35%;
@@ -153,9 +93,9 @@ button {
     width: 10%;
     height: 10%;
     
-    margin-left: 30%;
-    margin-bottom: 5%;
-    margin-top: -140%;
+    margin-left:15%;
+    margin-bottom: 15%;
+    margin-top: -210%;
     
 }
 
@@ -227,22 +167,12 @@ button {
     transition: opacity 0.4s ease-out;
 }
 .bas {
-    // position: relative;
-    // height: 7vh;
-    // width: 100vw;
-    // background-color: #0c0c01;
+   
     margin-top: 5%;
     
 }
 .retro-button {
-  // position: absolute;
-  // left: -160px;
-  // width: 30vw;
-  // height: 5vh;
-  // background-color:rgb(185, 183, 183);
-  // margin-top: 1%;
-  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  // font-size: 25px;
+
   
   position:relative;
   appearance:none;
@@ -275,18 +205,7 @@ button {
 
 }
 
-// .valid {
-//     position: absolute;
-//     left: 150px;
-//     width: 30vw;
-//     height: 5vh;
-//     background-color:rgb(185, 183, 183);
-//     margin-top: 1%;
-//     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-//     font-size: 25px;
 
- 
-// }
 
 
 
@@ -294,55 +213,7 @@ button {
 
 
 }
-@media screen and (min-width: 641px) {
-    // .red {
-    //     height: 155vh;
-    //     width: 150vw;
-    //     background-color: red;
-    //     transform : rotate(20deg);
-    //     position: absolute;
-    //     right: 35%;
-    //     bottom: 6%;
-        
-        
-    // }
-    // .blue {
-    //     height: 155vh;
-    //     width: 80vw;
-    //     transform : rotate(20deg);
-    //     position: absolute;
-    //     right: -29%;
-    //     bottom: -40%;
-    //     background-color:blue;
-    
-    
-        
-        
-        
-    
-    // }
-    // .trait {
-    //     width: 0.1vw;
-    //     height: 100vh;
-    //     background-color: #0c0c01;
-    //     transform : rotate(20deg);
-    //     position: absolute;
-    //     margin-left: 47%;
-    //     margin-top: -0%;
-    
-    // }
-    // .versus {
-    //     display: flex;
-    //     justify-content: center;
-        
-    // }
-    // .vs {
-    //    width: 30vw;
-    //    margin-top: 8%;
-    //    position: absolute;
-    //    margin-right: 6%;
-    // }
-    
+@media screen and (min-device-width : 461px) and (max-device-width: 920px) {
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -394,197 +265,378 @@ table {
 }
 
 
-    img {
-
-        display: flex;
-    justify-content: center;
-   
-    width: 100vw;
+img {
+    width: 100%;
     height: 100vh;
-    align-items: center;
+   
+}
+
+
+
+
+.her1 {
+    width: 35%;
+    height: 15%;
+    margin-left: 2%;
+}
+
+.weap1 {
+    width: 35%;
+    height: 5%;
+    margin-left: 2%;
+    
+}
+
+
+.her2 {
+    width: 35%;
+    height: 15%;
+    margin-left: 63%;
+}
+
+
+.weap2 {
+    width: 35%;
+    height: 5%;
+    margin-left: 63%;
+    
+}
+
+.milieu {
+   margin-top: -82%;
+}
+
+button {
+    margin-left: 35%;
+}
+.loader {
+    width: 50%;
+    height: 50%;
+    
+    margin-left:15%;
+    margin-bottom: 15%;
+    margin-top: -135%;
+    
+}
+
+.lettre {
+    color: #484848;
+    font-size: 450%;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
     position: relative;
-        // width: 100%;
-        // height: 100%;
-    }
-    .perso1 {
-        background-color: aqua;
-        width: 25vw;
-        height: 40vh;
-        position: relative;
-        margin-left: 5%;
-        // margin-top: -150%;
-        
-       
-       
-    }
     
-    .arme1 {
-        background-color:rgb(0, 255, 204);
-        width: 15vw;
-        height: 25vh;
-        position: relative;
-        margin-left: 10%;
-        
+}
+@keyframes flash {
+    0% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
     }
-    
-    .perso2 {
-        background-color: aqua;
-        width: 25vw;
-        height: 40vh;
-        margin-left: 65%;
-        margin-top: -30%;
-
-        position: relative;
-    }
-    
-    .arme2 {
-    
-        background-color:rgb(0, 255, 204);
-        width: 15vw;
-        height: 25vh;
-        margin-left: 70%;
-        position: relative;
-    }
-    
-    button {
-        margin-left: 35%;
-    }
-    .loader {
-        width: 10%;
-        height: 10%;
-        margin-top: -45%;
-        margin-left: 30%;
-        margin-bottom: 5%;
-        
-    }
-    
-    .lettre {
+    90% {
         color: #484848;
-        font-size: 400%;
-        letter-spacing: 15px;
-        margin-bottom: 150px;
-        animation: flash 1.2s linear infinite;
-        position: relative;
-        
+        text-shadow: none;
     }
-    @keyframes flash {
-        0% {
-            color: #fff900;
-            text-shadow: 0 0 7px #fff900;
-        }
-        90% {
-            color: #484848;
-            text-shadow: none;
-        }
-        100% {
-            color: #fff900;
-            text-shadow: 0 0 7px #fff900;
-        }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
     }
-    .lettre:nth-child(1) {
-        animation-delay: 0.1s;
-    }
-    
-    .lettre:nth-child(2) {
-        animation-delay: 0.2s;
-    }
-    
-    .lettre:nth-child(3) {
-        animation-delay: 0.3s;
-    }
-    
-    .lettre:nth-child(4) {
-        animation-delay: 0.4s;
-    }
-    
-    .lettre:nth-child(5) {
-        animation-delay: 0.5s;
-    }
-    
-    .lettre:nth-child(6) {
-        animation-delay: 0.6s;
-    }
-    
-    .lettre:nth-child(7) {
-        animation-delay: 0.7s;
-    }
-    
-    .lettre:nth-child(8) {
-        animation-delay: 0.8s;
-    }
-    
-    .lettre:nth-child(9) {
-        animation-delay: 0.9s;
-    }
-    
-    .lettre:nth-child(10) {
-        animation-delay: 1s;
-    }
-    
-    .fonfu-out {
-        opacity: 0;
-        transition: opacity 0.4s ease-out;
-    }
-    // .bas {
-    //     // position: relative;
-    //     // height: 7vh;
-    //     // width: 100vw;
-    //     // background-color: #0c0c01;
-    //     // margin-top: 5%;
-    // }
-    .retro-button {
-        // position: absolute;
-        // left: -160px;
-        // width: 30vw;
-        // height: 5vh;
-        // background-color:rgb(185, 183, 183);
-        // margin-top: 1%;
-        // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        // font-size: 25px;
-        
-        position:relative;
-        appearance:none;
-        box-sizing:border-box;
-        font-size:calc( var(--button-height) / 3 );
-        font-family: 'Open Sans', sans-serif;
-        background: var(--color-bg);
-        height:var(--button-height);
-        min-width:var(--button-height);
-        border-radius:calc( var(--button-height) / 2);
-        border:0;
-        font-weight:800;
-        text-transform:uppercase;
-        color:var(--color-text);
-        text-shadow: 1px 1px var(--color-text-shadow);
-        cursor:pointer;
-        margin:6px 6px;
-        letter-spacing:.1em;
-        transition: all 200ms ease;
-        box-shadow:
-          -1px  -1px 1px var(--color-bg), //top highlight
-          0 0 0 4px var(--color-overlay-medium), //outer shadow
-          1px  1px 1px var(--color-bg-dark), //bottom lowlight
-          inset .0 .0 .0 var(--color-overlay-dark), //inset shadow    
-          inset .5rem .5rem .25rem var(--color-bg-light) //button gloss
-      
-       
-      
-      
-    
-    }
-    
-    // .valid {
-    //     position: absolute;
-    //     left: 150px;
-    //     width: 30vw;
-    //     height: 5vh;
-    //     background-color:rgb(185, 183, 183);
-    //     margin-top: 1%;
-    //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    //     font-size: 25px;
-    // }
+}
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
 
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.fonfu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+.bas {
+   
+    margin-top: 5%;
     
+}
+.retro-button {
+
+  
+  position:relative;
+  appearance:none;
+  box-sizing:border-box;
+  font-size:calc( var(--button-height) / 3 );
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+  height:var(--button-height);
+  min-width:var(--button-height);
+  border-radius:calc( var(--button-height) / 2);
+  border:0;
+  font-weight:800;
+  text-transform:uppercase;
+  color:var(--color-text);
+  text-shadow: 1px 1px var(--color-text-shadow);
+  cursor:pointer;
+  margin:6px 6px;
+  letter-spacing:.1em;
+  transition: all 200ms ease;
+  box-shadow:
+    -1px  -1px 1px var(--color-bg), //top highlight
+    0 0 0 4px var(--color-overlay-medium), //outer shadow
+    1px  1px 1px var(--color-bg-dark), //bottom lowlight
+    inset .0 .0 .0 var(--color-overlay-dark), //inset shadow    
+    inset .5rem .5rem .25rem var(--color-bg-light) //button gloss
+
+ 
 
 
+
+}
+
+}
+
+@media screen and (min-device-width : 921px)  { 
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+img {
+    width: 100%;
+    height: 100vh;
+   
+}
+
+
+
+
+.her1 {
+    width: 15%;
+    height: 15%;
+    margin-left: 12%;
+}
+
+.weap1 {
+    width: 15%;
+    height: 5%;
+    margin-left: 12%;
+    
+}
+
+
+.her2 {
+    width: 15%;
+    height: 15%;
+    margin-left: 68%;
+}
+
+
+.weap2 {
+    width: 15%;
+    height: 5%;
+    margin-left: 68%;
+    
+}
+
+.milieu {
+   margin-top: -36%;
+}
+
+button {
+    margin-left: 35%;
+}
+.loader {
+    width: 50%;
+    height: 50%;
+    
+    margin-left:35%;
+    margin-bottom: 2%;
+    margin-top: -46%;
+    
+}
+
+.lettre {
+    color: #484848;
+    font-size: 350%;
+    letter-spacing: 15px;
+    margin-bottom: 100px;
+    animation: flash 1.2s linear infinite;
+    position: relative;
+    
+}
+@keyframes flash {
+    0% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
     }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+}
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.fonfu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+.bas {
+   
+    margin-top: 0%;
+    
+}
+.retro-button {
+
+  
+  position:relative;
+  appearance:none;
+  box-sizing:border-box;
+  font-size:calc( var(--button-height) / 3 );
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+  height:var(--button-height);
+  min-width:var(--button-height);
+  border-radius:calc( var(--button-height) / 2);
+  border:0;
+  font-weight:800;
+  text-transform:uppercase;
+  color:var(--color-text);
+  text-shadow: 1px 1px var(--color-text-shadow);
+  cursor:pointer;
+  margin:6px 6px;
+  letter-spacing:.1em;
+  transition: all 200ms ease;
+  box-shadow:
+    -1px  -1px 1px var(--color-bg), //top highlight
+    0 0 0 4px var(--color-overlay-medium), //outer shadow
+    1px  1px 1px var(--color-bg-dark), //bottom lowlight
+    inset .0 .0 .0 var(--color-overlay-dark), //inset shadow    
+    inset .5rem .5rem .25rem var(--color-bg-light) //button gloss
+
+ 
+
+
+
+}
+
+}
