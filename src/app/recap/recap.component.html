@@ -31,23 +31,28 @@
 </div>
 
 <div class="perso1">
-<img *ngIf="heroeService.heroe1" [src]="heroeService.heroe1['images'].md" alt="">
+<img class="her1" *ngIf="heroeService.heroe1" [src]="heroeService.heroe1['images'].md" alt="">
 </div>
 <div class="arme1">
-
+    <img class="weap1" *ngIf="heroeService.weaponHeroe1" src={{heroeService.weaponHeroe1?.img}} alt="">
+    
 </div>
 <div>
   
 </div>
 <div class="perso2"
 >
-<img *ngIf="heroeService.heroe2" [src]="heroeService.heroe2['images'].md" alt=""></div>
-
-<div class="arme2">
+<div class="milieu">
+<img class="her2" *ngIf="heroeService.heroe2" [src]="heroeService.heroe2['images'].md" alt="">
 
 </div>
 
+<div class="arme2">
+    <img class="weap2" *ngIf="heroeService.weaponHeroe2" src={{heroeService.weaponHeroe2?.img}} alt="">
 
+</div>
+
+</div>
 
 
 <footer>

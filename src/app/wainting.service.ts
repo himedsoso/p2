@@ -10,7 +10,6 @@ import { Injectable } from '@angular/core';
 export class WaintingService {
 
 
-  constructor() { }
 
   heroes1 : number = 70;
   heroes2 : number = 149;
