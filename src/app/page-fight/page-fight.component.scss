@@ -44,6 +44,10 @@
     @media (min-width:568px) {
         width: 100%;
     }
+
+    @media (min-width:568px) {
+        width: 80%;
+    }
 }
 
 .desc {
@@ -90,7 +94,15 @@
         font-size: 1rem;
     }
 }
-
+.max_value {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+.current {
+    height: 98%;
+    background-color: red;
+}
 .progress-fight {
     margin: 0 10px;
     box-sizing: border-box;
