@@ -93,10 +93,31 @@
 }
 
 .progress-fight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px;
     box-sizing: border-box;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;  
+    &__show{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: rgb(253, 240, 224);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        &__fight{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
 }
+
+
 
 
