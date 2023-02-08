@@ -78,6 +78,11 @@ export class PageFightComponent {
     console.log('Il reste ', this.hero2_life, ' de vie à ', this.hero2.name);
   }
 
+
+  getLifeValue(num){
+    return `${num}%`
+  }
+
   showWin(hero) {
     if (hero === this.hero1) {
       this.hero1Win = true;
@@ -194,7 +199,7 @@ export class PageFightComponent {
       console.log('vie du héros 2 : ', this.hero2_life);
     }
   }
-
+  
   cake(hero) {
     if (hero == this.hero1) {
       this.hero1.powerstats.strength += 30;
@@ -266,11 +271,17 @@ export class PageFightComponent {
               this.showLifeHero1();
           } else if (this.hero1_life <= 0) {
             this.endFight();
+            this.heroe.getWinner(this.hero2);
+            console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero2.name," WIN !!!");
           } else if (this.hero2_life <= 0){
             this.endFight();
+            this.heroe.getWinner(this.hero1);
+            console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero1.name," WIN!!!");
           }
   }
@@ -290,11 +301,17 @@ export class PageFightComponent {
               this.showLifeHero1();
           } else if (this.hero1_life <= 0) {
             this.endFight();
+            this.heroe.getWinner(this.hero2);
+            console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero2.name," WIN !!!");
           } else if (this.hero2_life <= 0){
             this.endFight();
+            this.heroe.getWinner(this.hero1);
+            console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero1.name," WIN!!!");
           }
   }
@@ -314,11 +331,17 @@ export class PageFightComponent {
           this.showLifeHero1();
       } else if (this.hero1_life <= 0) {
         this.endFight();
+        this.heroe.getWinner(this.hero2);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
+        this.heroe.getWinner(this.hero1);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -338,11 +361,17 @@ export class PageFightComponent {
           this.showLifeHero1();
       } else if (this.hero1_life <= 0) {
         this.endFight();
+        this.heroe.getWinner(this.hero2);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
+        this.heroe.getWinner(this.hero1);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -362,11 +391,17 @@ export class PageFightComponent {
           this.showLifeHero1();
       } else if (this.hero1_life <= 0) {
         this.endFight();
+        this.heroe.getWinner(this.hero2);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
+        this.heroe.getWinner(this.hero1);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -386,11 +421,17 @@ export class PageFightComponent {
           this.showLifeHero1();
       } else if (this.hero1_life <= 0) {
         this.endFight();
+        this.heroe.getWinner(this.hero2);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
+        this.heroe.getWinner(this.hero1);
+        console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -441,6 +482,10 @@ export class PageFightComponent {
     clearTimeout(this.myTimer);
   }
 
+  goWinnerPage(){
+    this.router.navigate(['/winner'])
+  }
+
 
 
   // ------------ lancement de test ----------
@@ -460,7 +505,7 @@ export class PageFightComponent {
     console.log(this.weapon2);
 
     this.myTimer = setInterval(() => {
-      this.randomNumber = Math.floor(Math.random() * 10);
+      this.randomNumber = Math.floor(Math.random() * 6);
 
       if (this.randomNumber === 0) {
         this.combat();

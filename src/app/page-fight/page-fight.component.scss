@@ -33,13 +33,16 @@
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;  
     background-color: rgba($color: #ffffff, $alpha: 0.3);
+    flex-direction: column;
+
 
     &__img {
         max-height: 600px;
     }
 
-    &--right {
-        flex-direction: row-reverse;
+
+    @media (min-width:568px) {
+        width: 100%;
     }
 
     @media (min-width:568px) {
@@ -91,7 +94,15 @@
         font-size: 1rem;
     }
 }
-
+.max_value {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+.current {
+    height: 98%;
+    background-color: red;
+}
 .progress-fight {
     display: flex;
     flex-direction: column;
