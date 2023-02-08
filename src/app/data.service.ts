@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  title : string = "BattleKingsHeroFightOfStreetRage";
+  title : string = "Heroes Battle";
 
   constructor() { }
   
