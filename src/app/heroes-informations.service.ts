@@ -17,6 +17,7 @@ export class HeroesInformationsService {
   heroe2!:object;
   weaponHeroe1!:any;
   weaponHeroe2!:any;
+  winner!:object;
   
   // A l'affichage de la page de selection des personnage on appel l'api
   OnInit() {
@@ -38,6 +39,9 @@ export class HeroesInformationsService {
   weaponSelected(weaponSelected1:object,weaponSelected2:object):void{
     this.weaponHeroe1=weaponSelected1
     this.weaponHeroe2=weaponSelected2
+  }
+  getWinner(hero){
+    this.winner = hero;
   }
 
 }
