@@ -192,47 +192,6 @@ export class PageFightComponent {
     }
   }
 
-  cake(hero) {
-    if (hero == this.hero1) {
-      this.hero1.powerstats.strength += 30;
-      console.log('Strength du héros 1 : ', this.hero1.powerstats.strength);
-    } else if (hero == this.hero2) {
-      this.hero2.powerstats.strength += 30;
-      console.log('Strength du héros 2 : ', this.hero2.powerstats.strength);
-    }
-  }
-
-  pc(hero) {
-    if (hero == this.hero1) {
-      this.hero1.powerstats.intelligence += 30;
-      console.log('Intelligence du héros 1 : ', this.hero1.powerstats.intelligence);
-    } else if (hero == this.hero2) {
-      this.hero2.powerstats.intelligence += 30;
-      console.log('Intelligence du héros 1 : ', this.hero2.powerstats.intelligence);
-    }
-  }
-
-  kunai(hero) {
-    if (hero == this.hero1) {
-      this.hero1.powerstats.speed += 30;
-      console.log('Speed du héros 1 : ', this.hero1.powerstats.speed);
-    } else if (hero == this.hero2) {
-      this.hero2.powerstats.speed += 30;
-      console.log('Speed du héros 2 : ', this.hero2.powerstats.speed);
-    }
-  }
-
-  nunchaku(hero) {
-    if (hero == this.hero1) {
-      this.hero1.powerstats.combat += 30;
-      console.log('Combat du héros 1 : ', this.hero1.powerstats.combat);
-    } else if (hero == this.hero2) {
-      this.hero2.powerstats.combat += 30;
-      console.log('Combat du héros 2 : ', this.hero2.powerstats.combat);
-    }
-  }
-
-=======
 
   cake(hero) {
     if (hero == this.hero1) {
