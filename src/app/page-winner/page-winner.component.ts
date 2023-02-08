@@ -11,6 +11,9 @@ import { HeroesInformationsService } from '../heroes-informations.service';
   styleUrls: ['./page-winner.component.scss']
 })
 export class PageWinnerComponent implements OnInit {
+
+  title = 'The Winner is :';
+
   constructor(private router:Router, public heroe: HeroesInformationsService) {} 
 
   hero1: any;
@@ -18,6 +21,11 @@ export class PageWinnerComponent implements OnInit {
   ngOnInit() {
     this.hero1 = this.heroe.heroe1;
   }
+
+  // page5() {
+  //   this.router.navigate(['/page5']);
+  // }
+
 }
 
 
