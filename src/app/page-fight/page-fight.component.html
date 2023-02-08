@@ -2,39 +2,53 @@
     <div class="main__perso--left">
         <div class="perso perso--left">
             <img class="perso__img" [src]="hero1.images.md" alt="">
-            <div class="desc">
+            <div *ngIf="desktop" class="desc">
                 <p class="desc__text"><span class="desc__name">{{ hero1.name  }}</span></p>
-                <p class="desc__text">Intelligence : <span class="desc__stats">{{ hero1.powerstats.intelligence }}</span></p>
-                <p class="desc__text">Strength : <span class="desc__stats">{{ hero1.powerstats.strength }}</span></p>
-                <p class="desc__text">Speed : <span class="desc__stats">{{ hero1.powerstats.speed }}</span></p>
-                <p class="desc__text">Durability : <span class="desc__stats">{{ hero1.powerstats.durability }}</span></p>
-                <p class="desc__text">Power : <span class="desc__stats">{{ hero1.powerstats.power }}</span></p>
-                <p class="desc__text">Combat : <span class="desc__stats">{{ hero1.powerstats.combat }}</span></p>
+               <div class="desc__group">
+                    <div class="desc__group-top">
+                        <p class="desc__text">Intelligence : <span class="desc__stats">{{ hero1.powerstats.intelligence }}</span></p>
+                        <p class="desc__text">Strength : <span class="desc__stats">{{ hero1.powerstats.strength }}</span></p>
+                        <p class="desc__text">Speed : <span class="desc__stats">{{ hero1.powerstats.speed }}</span></p>
+                    </div>
+                    <div class="desc__group-bottom">
+                        <p class="desc__text">Durability : <span class="desc__stats">{{ hero1.powerstats.durability }}</span></p>
+                        <p class="desc__text">Power : <span class="desc__stats">{{ hero1.powerstats.power }}</span></p>
+                        <p class="desc__text">Combat : <span class="desc__stats">{{ hero1.powerstats.combat }}</span></p>
                 <p class="desc__text">Life : <span class="desc__stats">{{ hero1_life }}</span></p>
                 <div class="max_value">
                     <div class="current" [ngStyle]="{width:getLifeValue(hero1_life)}"></div>
                 </div>
+                    </div>
+               </div>
             </div>
         </div>
     </div>
     <div class="progress-fight">
-        <span></span>
+        <div *ngIf="alive">
+            <div class="desc__text">Santé de {{ hero1.name }} : <span class="desc__stats">{{ hero1_life }}</span></div>
+            <div class="desc__text">Santé de {{ hero2.name }} : <span class="desc__stats">{{ hero2_life }}</span></div>
+        </div>
+        <div *ngIf="!alive">
+            <span class="desc__text" *ngIf="hero1Win">{{ showWin(this.hero1) }}</span>
+            <span class="desc__text" *ngIf="hero2Win">{{ showWin(this.hero2) }}</span>
+        </div>
     </div>
    <div class="main__perso--right">
         <div class="perso perso--right">
             <img class="perso__img" [src]="hero2.images.md" alt="">
-            
-            <div class="desc">
+            <div *ngIf="desktop" class="desc">
                 <p class="desc__text"><span class="desc__name">{{ hero2.name }}</span></p>
-                <p class="desc__text">Intelligence : <span class="desc__stats">{{ hero2.powerstats.intelligence }}</span></p>
-                <p class="desc__text">Strength : <span class="desc__stats">{{ hero2.powerstats.strength }}</span></p>
-                <p class="desc__text">Speed : <span class="desc__stats">{{ hero2.powerstats.speed }}</span></p>
-                <p class="desc__text">Durability : <span class="desc__stats">{{ hero2.powerstats.durability }}</span></p>
-                <p class="desc__text">Power : <span class="desc__stats">{{ hero2.powerstats.power }}</span></p>
-                <p class="desc__text">Combat : <span class="desc__stats">{{ hero2.powerstats.combat }}</span></p>
-                <p class="desc__text">Life : <span class="desc__stats">{{ hero2_life }}</span></p>
-                <div class="max_value">
-                    <div class="current" [ngStyle]="{width:getLifeValue(hero2_life)}"></div>
+                <div class="desc__group">
+                   <div class="desc__group-top">
+                        <p class="desc__text">Intelligence : <span class="desc__stats">{{ hero2.powerstats.intelligence }}</span></p>
+                        <p class="desc__text">Strength : <span class="desc__stats">{{ hero2.powerstats.strength }}</span></p>
+                        <p class="desc__text">Speed : <span class="desc__stats">{{ hero2.powerstats.speed }}</span></p>
+                   </div>
+                    <div class="desc__group-bottom">
+                        <p class="desc__text">Durability : <span class="desc__stats">{{ hero2.powerstats.durability }}</span></p>
+                        <p class="desc__text">Power : <span class="desc__stats">{{ hero2.powerstats.power }}</span></p>
+                        <p class="desc__text">Combat : <span class="desc__stats">{{ hero2.powerstats.combat }}</span></p>
+                    </div>
                 </div>
             </div>
         </div>
