@@ -75,6 +75,10 @@ export class PageFightComponent {
     console.log('Il reste ', this.hero2_life, ' de vie à ', this.hero2.name);
   }
 
+  getLifeValue(num){
+    return `${num}%`
+  }
+
 
   // ------------ fonction des powerstats ----------
   combat(){
