@@ -25,7 +25,11 @@ export class RecapComponent implements OnInit, OnDestroy {
   heroeComponent1!:object
   heroeComponent2!:object
 
+  weaponComponent1!:object
+  weaponComponent2!:object
 
+// weaponHeroe1!: object
+// weaponHeroe2!: object
 
   page3():void{
     this.router.navigate(["/fight"]);
@@ -37,7 +41,7 @@ export class RecapComponent implements OnInit, OnDestroy {
 
 
   chargement(): void {
-    this.clear = setTimeout(() =>this.page3(), 1000)
+    this.clear = setTimeout(() =>this.page3(), 4000)
     
   }
 
@@ -47,7 +51,9 @@ export class RecapComponent implements OnInit, OnDestroy {
     
     this.chargement()
     // this.heroeService.OnInit()
-   
+    // this.weaponComponent1= this.heroeService.weaponHeroe1
+
+    console.log(this.heroeService.weaponHeroe1)
   }
 
   ngOnDestroy(): void {
@@ -55,8 +61,7 @@ export class RecapComponent implements OnInit, OnDestroy {
     
   }
  
- 
-  
+
  
 }
 
