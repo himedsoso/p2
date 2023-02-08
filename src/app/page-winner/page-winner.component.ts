@@ -13,10 +13,10 @@ import { HeroesInformationsService } from '../heroes-informations.service';
 export class PageWinnerComponent implements OnInit {
   constructor(private router:Router, public heroe: HeroesInformationsService) {} 
 
-  hero1: any;
+  winner: any;
 
   ngOnInit() {
-    this.hero1 = this.heroe.heroe1;
+    this.winner = this.heroe.winner;
   }
 }
 
