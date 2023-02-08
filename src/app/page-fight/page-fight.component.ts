@@ -70,6 +70,10 @@ export class PageFightComponent {
     console.log('Il reste ', this.hero2_life, ' de vie à ', this.hero2.name);
   }
 
+  getLifeValue(num){
+    return `${num}%`
+  }
+
   showWin(hero) {
     if (hero === this.hero1) {
       this.hero1Win = true;

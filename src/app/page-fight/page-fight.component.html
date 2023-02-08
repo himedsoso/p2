@@ -14,6 +14,10 @@
                         <p class="desc__text">Durability : <span class="desc__stats">{{ hero1.powerstats.durability }}</span></p>
                         <p class="desc__text">Power : <span class="desc__stats">{{ hero1.powerstats.power }}</span></p>
                         <p class="desc__text">Combat : <span class="desc__stats">{{ hero1.powerstats.combat }}</span></p>
+                        <p class="desc__text">Life : <span class="desc__stats">{{ hero1_life }}</span></p>
+                        <div class="max_value">
+                            <div class="current" [ngStyle]="{width:getLifeValue(hero1_life)}"></div>
+                        </div>
                     </div>
                </div>
             </div>
@@ -44,6 +48,10 @@
                         <p class="desc__text">Durability : <span class="desc__stats">{{ hero2.powerstats.durability }}</span></p>
                         <p class="desc__text">Power : <span class="desc__stats">{{ hero2.powerstats.power }}</span></p>
                         <p class="desc__text">Combat : <span class="desc__stats">{{ hero2.powerstats.combat }}</span></p>
+                        <p class="desc__text">Life : <span class="desc__stats">{{ hero2_life }}</span></p>
+                        <div class="max_value">
+                            <div class="current" [ngStyle]="{width:getLifeValue(hero2_life)}"></div>
+                        </div>
                     </div>
                 </div>
             </div>
