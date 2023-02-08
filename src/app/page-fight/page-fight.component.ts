@@ -449,7 +449,7 @@ export class PageFightComponent {
     console.log(this.weapon2);
 
     this.myTimer = setInterval(() => {
-      this.randomNumber = Math.floor(Math.random() * 10);
+      this.randomNumber = Math.floor(Math.random() * 6);
 
       if (this.randomNumber === 0) {
         this.combat();
