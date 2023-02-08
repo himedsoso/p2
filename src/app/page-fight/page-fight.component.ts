@@ -199,7 +199,7 @@ export class PageFightComponent {
       console.log('vie du héros 2 : ', this.hero2_life);
     }
   }
-  
+
   cake(hero) {
     if (hero == this.hero1) {
       this.hero1.powerstats.strength += 30;

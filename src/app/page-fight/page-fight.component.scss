@@ -38,15 +38,15 @@
 
     &__img {
         max-height: 600px;
+
+        @media (max-width: 768px) {
+            max-height: 200px;
+        }
     }
 
-
-    @media (min-width:568px) {
+    @media (min-width:768px) {
         width: 100%;
-    }
-
-    @media (min-width:568px) {
-        width: 80%;
+        flex-direction: row;
     }
 }
 
