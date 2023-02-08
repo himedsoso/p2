@@ -10,56 +10,66 @@
     }
 
 
+	h1 {
+		font-size: 2.5rem;
+		color: #31250d;
+		background: -webkit-linear-gradient(#cfc09f 0%, #634f2c 10%, #cfc09f 40%, #ffecb3 50%, #3a2c0f 90%);
+		// -webkit-background-clip: text;
+		// -webkit-text-fill-color: transparent;
+    }
+	
+
+
     // button {
            
     // }
 
-    html,
-body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(14, 9, 22);
-}
+//     html,
+// body {
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+//   margin: 0;
+//   padding: 0;
+//   background-color: rgb(14, 9, 22);
+// }
 
-.page-thunder-to-text {
-	position: relative;
-	overflow: hidden;
+// .page-thunder-to-text {
+// 	position: relative;
+// 	overflow: hidden;
 
-	canvas {
-		display: block;
-	}
+// 	canvas {
+// 		display: block;
+// 	}
 
-	input {
-		position: absolute;
-		bottom: 50px;
-		left: 0;
-		right: 0;
-		display: block;
-		outline: none;
-		background-color: rgba(38, 50, 56, 0.2);
-		color: #ffffff;
-		border: none;
-		width: 50%;
-		min-width: 500px;
-		max-width: 100%;
-		margin: auto;
-		height: 60px;
-		line-height: 60px;
-		font-size: 40px;
-		padding: 0 20px;
+// 	input {
+// 		position: absolute;
+// 		bottom: 50px;
+// 		left: 0;
+// 		right: 0;
+// 		display: block;
+// 		outline: none;
+// 		background-color: rgba(38, 50, 56, 0.2);
+// 		color: #ffffff;
+// 		border: none;
+// 		width: 50%;
+// 		min-width: 500px;
+// 		max-width: 100%;
+// 		margin: auto;
+// 		height: 60px;
+// 		line-height: 60px;
+// 		font-size: 40px;
+// 		padding: 0 20px;
 
-		&:hover, &:focus {
-			border: 1px solid rgba(38, 50, 56, 0.6);
-		}
+// 		&:hover, &:focus {
+// 			border: 1px solid rgba(38, 50, 56, 0.6);
+// 		}
 
-		&::-webkit-input-placeholder {
-			color: rgba(#ffffff, 0.1);
-		}
-	}
-}
+// 		&::-webkit-input-placeholder {
+// 			color: rgba(#ffffff, 0.1);
+// 		}
+// 	}
+// }

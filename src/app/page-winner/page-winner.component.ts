@@ -11,6 +11,9 @@ import { HeroesInformationsService } from '../heroes-informations.service';
   styleUrls: ['./page-winner.component.scss']
 })
 export class PageWinnerComponent implements OnInit {
+
+  title = 'The Winner is :';
+
   constructor(private router:Router, public heroe: HeroesInformationsService) {} 
 
   winner: any;
@@ -31,6 +34,11 @@ export class PageWinnerComponent implements OnInit {
   ngOnDestroy ():void {
     clearTimeout(this.clear)
   }
+
+  // page5() {
+  //   this.router.navigate(['/page5']);
+  // }
+
 }
 
 
