@@ -28,6 +28,7 @@ export class PageFightComponent {
   hero1Win: boolean = false;
   hero2Win: boolean = false;
   desktop: boolean = true;
+  showFigth:string[]=[];
 
 
   // Competences des heros
@@ -42,7 +43,10 @@ export class PageFightComponent {
 // -------------------------  Function Mecanic Fight  ---------------------------------------
 
   punch(heroQuiFrappe, heroQuiPrend) {
+
       console.log(heroQuiFrappe, 'donne un Punch à ', heroQuiPrend);
+      this.showFigth.push(`${heroQuiFrappe} hit ${heroQuiPrend} `);
+  
   }
 
   randomPunchHero1() {
@@ -53,12 +57,16 @@ export class PageFightComponent {
     return Math.floor(Math.random() * this.hero2.powerstats.power / 10);
   }
 
-  damageHero1() {
+  damageHero1() {    
+    const lifeBefore = this.hero1_life;
     this.hero1_life -= 10 + this.randomPunchHero2();
+    this.showFigth.push(`who loses ${lifeBefore - this.hero1_life} life points`);
   }
 
   damageHero2() {
+    const lifeBefore = this.hero2_life;
     this.hero2_life -= 10 + this.randomPunchHero1();
+    this.showFigth.push(`who loses ${lifeBefore - this.hero2_life} life points`);
   }
 
   showLifeHero1() {
@@ -482,6 +490,9 @@ export class PageFightComponent {
 
   // ------------ lancement de test ----------
   ngOnInit() {  
+
+    this.showFigth=[];
+
     this.hero1 = this.heroe.heroe1;
     this.hero2 = this.heroe.heroe2;
     this.weapon1 = this.heroe.weaponHeroe1;
