@@ -14,17 +14,17 @@ export class FinComponent {
   constructor (private router : Router, public heroes: DataFinService) {}
 
   
-
+//création des méthodes pour retourner à l'accueil et à la sélection des persos
   returnHome() {
     return this.router.navigate(["/accueil"]);
   }
   startAgain(){
     return this.router.navigate(["/selection-perso"]);
   }
+
+//création de la méthode d'ouverture de la gelerie qui lance la récupération des données sur l'api
   openModal(){
     this.heroes.isModalDisplayed = !this.heroes.isModalDisplayed
     this.heroes.getData()
-  
-
 }
 }
