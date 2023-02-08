@@ -11,28 +11,36 @@
             <div class="stats">
                 <p>Strength</p>
                 <div class="max_value">
-                    <div class="current" [ngStyle]="{width:data.powerstats.strength | json}"></div>
+                    <div class="strength" [ngStyle]="{width:getValue(data.powerstats.strength)}"></div>
                 </div>
                 <p>Speed</p>
                 <div class="max_value">
-                    <div class="current" [ngStyle]="{width:data.powerstats.speed}"></div>
+                    <div class="speed" [ngStyle]="{width:getValue(data.powerstats.speed)}"></div>
                 </div>
                 <p>Durability</p>
                 <div class="max_value">
-                    <div class="current" [ngStyle]="{width:data.powerstats.durability}"></div>
+                    <div class="durability" [ngStyle]="{width:getValue(data.powerstats.durability)}"></div>
                 </div>
                 <p>Combat</p>
                 <div class="max_value">
-                    <div class="current" [ngStyle]="{width:data.powerstats.combat}"></div>
+                    <div class="combat" [ngStyle]="{width:getValue(data.powerstats.combat)}"></div>
+                </div>
+                <p>Power</p>
+                <div class="max_value">
+                    <div class="power" [ngStyle]="{width:getValue(data.powerstats.power)}"></div>
+                </div>
+                <p>Intelligence</p>
+                <div class="max_value">
+                    <div class="intelligence" [ngStyle]="{width:getValue(data.powerstats.intelligence)}"></div>
                 </div>
             </div>
         </div>
     </li>
 </div>
 <div id="button">
-    <button (click)="displayAllHeroes()" >Display all Heroes</button>
-    <button (click)="displayOnlyHumanHeroes()">Display all Humans Heroes</button>
-    <button (click)="displayOnlyNonHumanHeroes()">Display all Non-Humans Heroes</button>
+    <button id="button1" (click)="displayAllHeroes()" >Display all Heroes</button>
+    <button id="button2" (click)="displayOnlyHumanHeroes()">Display all Humans Heroes</button>
+    <button id="button3" (click)="displayOnlyNonHumanHeroes()">Display all Non-Humans Heroes</button>
 </div>
 
 

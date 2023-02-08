@@ -16,10 +16,23 @@ export class PageWinnerComponent implements OnInit {
 
   constructor(private router:Router, public heroe: HeroesInformationsService) {} 
 
-  hero1: any;
+  winner: any;
+  clear:any;
 
   ngOnInit() {
-    this.hero1 = this.heroe.heroe1;
+    this.winner = this.heroe.winner;
+    this.chargement();
+  }
+  goFin():void{
+    this.router.navigate(['/fin'])
+  }
+  chargement(): void {
+    this.clear = setTimeout(() =>this.goFin(), 3000)
+    
+  }
+
+  ngOnDestroy ():void {
+    clearTimeout(this.clear)
   }
 
   // page5() {

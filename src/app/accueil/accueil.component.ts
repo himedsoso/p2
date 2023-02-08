@@ -11,10 +11,10 @@ import { HeroesInformationsService } from '../heroes-informations.service';
 })
 export class AccueilComponent{
 
+  constructor (private router: Router,private titleService:DataService){}
 
-  title = "Heroes Battle";
+  title = this.titleService.title;
 
-  constructor (private router: Router){}
 
   select() {
     this.router.navigate(["/selection-perso"])

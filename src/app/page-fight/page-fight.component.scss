@@ -6,6 +6,10 @@
     justify-content: space-around;
     background: url('../../assets/arena1.png') center/cover;
 
+    @media (min-width: 768px) {
+    flex-direction: row;        
+    }
+
     &__perso {
         display: flex;
 
@@ -29,44 +33,102 @@
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;  
     background-color: rgba($color: #ffffff, $alpha: 0.3);
+    flex-direction: column;
+
 
     &__img {
-        height: 30vh;
+        max-height: 600px;
+
+        @media (max-width: 768px) {
+            max-height: 200px;
+        }
     }
 
-    &--right {
-        flex-direction: row-reverse;
+    @media (min-width:768px) {
+        width: 100%;
+        flex-direction: row;
     }
 }
 
 .desc {
-    margin: 0 20px;
     width: 100%;
     height: 100%;
+    font-size: 1.2rem;
+
+    @media (min-width:768px) {
+        font-size: 1.5rem;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        // @media (min-width: 768px) {
+        //     flex-direction: row;
+        // }
+
+        &-top {
+            margin: 0 20px;
+        }
+    }
 
     &__text{
-        font-size: 20px;
+        margin: 0;
+        line-height: 1.7;
         font-weight: bold;
     }
 
     &__name {
         text-decoration: underline;
         font-weight: bold;
-        font-size: 1.2rem;
+        text-align: center;
     }
 
     &__stats {
         color: red;
         font-weight: bold;
-        font-size: 20px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1rem;
     }
 }
-
+.max_value {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+.current {
+    height: 98%;
+    background-color: red;
+}
 .progress-fight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px;
     box-sizing: border-box;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;  
+    &__show{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: rgb(253, 240, 224);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        &__fight{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
 }
+
+
 
 
