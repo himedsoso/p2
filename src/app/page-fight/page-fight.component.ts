@@ -308,12 +308,14 @@ export class PageFightComponent {
             this.heroe.getWinner(this.hero2);
             console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero2.name," WIN !!!");
           } else if (this.hero2_life <= 0){
             this.endFight();
             this.heroe.getWinner(this.hero1);
             console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero1.name," WIN!!!");
           }
   }
@@ -336,12 +338,14 @@ export class PageFightComponent {
             this.heroe.getWinner(this.hero2);
             console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero2.name," WIN !!!");
           } else if (this.hero2_life <= 0){
             this.endFight();
             this.heroe.getWinner(this.hero1);
             console.log(this.heroe.winner);
             this.alive = false;
+            this.goWinnerPage();
             console.log(this.hero1.name," WIN!!!");
           }
   }
@@ -364,12 +368,14 @@ export class PageFightComponent {
         this.heroe.getWinner(this.hero2);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
         this.heroe.getWinner(this.hero1);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -392,12 +398,14 @@ export class PageFightComponent {
         this.heroe.getWinner(this.hero2);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
         this.heroe.getWinner(this.hero1);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -420,12 +428,14 @@ export class PageFightComponent {
         this.heroe.getWinner(this.hero2);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
         this.heroe.getWinner(this.hero1);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -448,12 +458,14 @@ export class PageFightComponent {
         this.heroe.getWinner(this.hero2);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero2.name," WIN !!!");
       } else if (this.hero2_life <= 0){
         this.endFight();
         this.heroe.getWinner(this.hero1);
         console.log(this.heroe.winner);
         this.alive = false;
+        this.goWinnerPage();
         console.log(this.hero1.name," WIN!!!");
       }
   }
@@ -502,6 +514,10 @@ export class PageFightComponent {
   
   endFight() {
     clearTimeout(this.myTimer);
+  }
+
+  goWinnerPage(){
+    this.router.navigate(['/winner'])
   }
 
 

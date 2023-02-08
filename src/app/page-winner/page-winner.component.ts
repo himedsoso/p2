@@ -18,6 +18,7 @@ export class PageWinnerComponent implements OnInit {
 
   ngOnInit() {
     this.winner = this.heroe.winner;
+    this.chargement();
   }
   goFin():void{
     this.router.navigate(['/fin'])
