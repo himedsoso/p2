@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DataFinService } from '../data-fin.service'
 
 @Component({
@@ -28,15 +27,8 @@ export class ModalGaleryComponent {
   displayOnlyNonHumanHeroes(){
     this.heroesDisplayed = this.heroes.datas.filter((hero: { appearance: { race: string; }; }) => hero.appearance.race !== "Human")
    }
-
-  
-
-
-  
-  
-
- 
-
-  
+  getValue(num :number):string{
+    return `${num}%`
+  }  
   
 }
