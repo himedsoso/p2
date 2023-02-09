@@ -1,11 +1,16 @@
 <div class="main">
     <div class="winner"></div>
-    <h2>
-        {{winner.name}} Wins!!!
-    </h2>
+    
     <div>
-        <img *ngIf="winner"[src]="winner['images'].md" alt="">
+
+        <h1>{{ title }}{{winner.name}}</h1>
+        
+    
+     <!-- <button (click)= 'page5()' >Test</button> -->
+
+        <img [src]="winner['images'].md" alt="">
 <!--     
      <button (click) = 'page5()' >Test</button> -->
+
     </div>
     
