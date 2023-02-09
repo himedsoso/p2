@@ -15,8 +15,6 @@ import { FinComponent } from './fin/fin.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { ProgressBarComponent } from './tools/progress-bar/progress-bar.component';
-import { TimelineFightComponent } from './tools/timeline-fight/timeline-fight.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalGaleryComponent } from './fin/modal-galery/modal-galery.component';
@@ -36,15 +34,10 @@ import { CardSelectionWeaponComponent } from './card-selection-weapon/card-selec
     PageWinnerComponent,
     RecapComponent,
     FinComponent,
-    ProgressBarComponent,
-    TimelineFightComponent,
     FooterComponent,
     ModalGaleryComponent,
-    
     CardHeroeComponent,
-         CardSelectionWeaponComponent
-
-
+    CardSelectionWeaponComponent,
   ],
   imports: [
     BrowserModule,

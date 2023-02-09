@@ -1,4 +1,7 @@
-body {
+body{
+  overflow: hidden;
+}
+.body {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -37,7 +40,7 @@ body {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    line-height: calc(125vw / 10);
+    // line-height: calc(125vw / 10);
     font-size: calc(60vw / 6);
     font-weight: bold;
     letter-spacing: .015em;
@@ -359,8 +362,13 @@ body {
 }
 
 @media (min-width:1000px) {
-  body {
+  .body {
     filter: blur(10px);/* Adding blur background image */
+    width: 105vw;
+    height: 105vh;
+    position: fixed;
+    top: -15px;
+    left: -15px;
   }
 
   .main {
