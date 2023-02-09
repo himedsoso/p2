@@ -1,9 +1,9 @@
 <body>
     
 
-<div>
+<!-- <div>
     <img src="../../assets/vs-6469147.jpg" alt="" srcset="">
-</div>
+</div> -->
 
 <!-- <div class="red">
 
@@ -17,6 +17,9 @@
 <div class="versus">
 <img class="vs" src="https://raw.githubusercontent.com/himedsoso/p2/main/src/assets/istockphot.png" alt="">
 </div> -->
+
+<header>
+    
 <div class="loader">
     <span class="lettre">C</span>
     <span class="lettre">H</span>
@@ -30,19 +33,21 @@
     <span class="lettre">T</span>
 </div>
 
-<div class="perso1">
-<img class="her1" *ngIf="heroeService.heroe1" [src]="heroeService.heroe1['images'].md" alt="">
-</div>
-<div class="arme1">
-    <img class="weap1" *ngIf="heroeService.weaponHeroe1" src={{heroeService.weaponHeroe1?.img}} alt="">
+</header>
     
+<main>
+<div class="selection1">
+    <div class="perso1">
+        <img class="her1" *ngIf="heroeService.heroe1" [src]="heroeService.heroe1['images'].md" alt="">
+        </div>
+        <div class="arme1">
+            <img class="weap1" *ngIf="heroeService.weaponHeroe1" src={{heroeService.weaponHeroe1?.img}} alt="">
 </div>
-<div>
-  
 </div>
-<div class="perso2"
->
-<div class="milieu">
+
+<div class="selection2">
+<div class="perso2">
+
 <img class="her2" *ngIf="heroeService.heroe2" [src]="heroeService.heroe2['images'].md" alt="">
 
 </div>
@@ -51,23 +56,23 @@
     <img class="weap2" *ngIf="heroeService.weaponHeroe2" src={{heroeService.weaponHeroe2?.img}} alt="">
 
 </div>
-
 </div>
+
+</main>
 
 
 <footer>
-        <div class="bas">
-            <button class="retro-button"(click) = 'page2()'>Back</button>
-            
-        </div>
-        <!-- <a class="animated-button1" (click)="page3()">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Fight !
-      </a> -->
+    <div class="bas">
+        <button class="retro-button"(click) = 'page2()'>Back</button>
+        
+    </div>
+    <!-- <a class="animated-button1" (click)="page3()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Fight !
+  </a> -->
 </footer>
-
 
 </body>

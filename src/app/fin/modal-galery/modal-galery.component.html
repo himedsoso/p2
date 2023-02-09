@@ -3,10 +3,10 @@
     <li  *ngFor="let data of heroesDisplayed">
         <div class="heroes_cards">
             <div class="portrait">
+                <h2>{{data.name}}</h2>
                 <div class="hero_image">
                     <img [src]="data.images.sm" alt="`image of {{data.name}}`">
-                </div>
-                <p>{{data.name}}</p>
+                </div>    
             </div>
             <div class="stats">
                 <p>Strength</p>

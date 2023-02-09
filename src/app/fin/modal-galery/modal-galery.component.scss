@@ -3,21 +3,30 @@
     height: 50%;
     margin: 5% auto;
     border: 1px solid black;
-    overflow: auto;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+        overflow: auto;
 }
 #close-icon {
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
 }
 #galery li {
     list-style: none;
 }
 .heroes_cards {
-    border: 1px solid red;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    background-color: darkslategrey;
     width: 98%;
     margin: 1% auto;
     display: flex;
+}
+h2 {
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 .portrait {
     width: 50%;
@@ -33,8 +42,10 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
-    // font-size: x-small;
+    font-size: x-large;
 }
 .max_value {
     width:100%;
@@ -74,6 +85,14 @@
     gap: 10px;
 }
 button {
+    width: 25%;
     height: 30%;
     font-size: larger;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    background: #e3d092;
+    box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
 }

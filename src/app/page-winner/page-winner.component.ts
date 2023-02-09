@@ -27,7 +27,7 @@ export class PageWinnerComponent implements OnInit {
     this.router.navigate(['/fin'])
   }
   chargement(): void {
-    this.clear = setTimeout(() =>this.goFin(), 5000)
+    this.clear = setTimeout(() =>this.goFin(), 10000)
     
   }
 
