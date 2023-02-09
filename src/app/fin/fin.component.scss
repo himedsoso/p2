@@ -2,12 +2,35 @@
     padding: 0;
     margin: 0;
 }
+body{
+    overflow: hidden;
+}
 
-body {
-    max-width: 1280px;
+.blur{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: url('../../assets/gotham_city2.png') center/cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
     margin: 0 auto 0 auto;
     height: 100vh;
-    background: url('../../assets/gotham_city2.png') center/cover
+    background: url('../../assets/gotham_city2.png') center/cover;
+    position:relative;
 }
 
 .end {
@@ -24,7 +47,7 @@ body {
     top: 0;
     z-index: 500;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     height: 100%;
     background-color: rgba(255, 228, 196, 0.356);
 
@@ -40,21 +63,46 @@ p{
     font-size: x-large;
 }
 
-footer{
+.footer{
     width: 100%;
-    max-width: 1280px;
-    position: absolute;
+    max-width: 1200px;
     display: flex;
     justify-content: space-around;
-    bottom:5%;
+    
 }
 
 button {
-    padding: 10px;
-    width: 25%;
+    width: 100px;
+    margin-right: 10px;
     font-size: larger;
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     background: #e3d092;
+    cursor: pointer;
 }
+
+@media (min-width:1200px) {
+    .blur {
+      filter: blur(10px);/* Adding blur background image */
+      width: 105vw;
+      height: 105vh;
+      position: fixed;
+      top: -15px;
+      left: -15px;
+    }
+  
+    .main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+   
+
+    button{
+        width: 100px;
+        margin-right: 10px;
+    }
+
+  }

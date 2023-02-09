@@ -1,12 +1,18 @@
-<body>    
-        <div class="end">
-        <h2>The End</h2>
-        <p>Merci d'avoir jouer avec nous et avec les Héros de la super API <a href="https://akabab.github.io/superhero-api/api/" target="blank">https://akabab.github.io/superhero-api/api/</a></p>
+<body>
+    <div class="blur">
+
+    </div> 
+
+    <div class="main"> 
+            <div class="end">
+            <h2>The End</h2>
+            <p>Merci d'avoir jouer avec nous et avec les Héros de la super API <a href="https://akabab.github.io/superhero-api/api/" target="blank">https://akabab.github.io/superhero-api/api/</a></p>
+        </div>
+        <app-modal-galery id="modal" *ngIf="heroes.isModalDisplayed"></app-modal-galery>
+        <div class=".footer">
+            <button (click)="returnHome()">Home</button>
+            <button (click)="openModal()">Galery</button>
+            <button (click)="startAgain()">Restart</button>
+        </div>
     </div>
-    <app-modal-galery id="modal" *ngIf="heroes.isModalDisplayed"></app-modal-galery>
-    <footer>
-        <button (click)="returnHome()">Home</button>
-        <button (click)="openModal()">Galery</button>
-        <button (click)="startAgain()">Restart</button>
-    </footer>
-</body>
+</body>  
