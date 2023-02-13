@@ -36,7 +36,7 @@
 
     </div>
     <div class="main__perso--right">
-        <div class="perso perso--right">
+        <div id="right" class="perso perso--right">
             <img class="perso__img" [src]="hero2.images.md" alt="">
             <div *ngIf="desktop" class="desc">
                 <p class="desc__text"><span class="desc__name">{{ hero2.name }}</span></p>
@@ -65,5 +65,3 @@
         </div>
     </div>
 </div>
-
-<app-footer></app-footer>

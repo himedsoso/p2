@@ -1,7 +1,7 @@
 #galery {
     width: 70%;
-    height: 50%;
-    margin: 5% auto;
+    height: 75%;
+    margin: 20px auto 0 auto;
     border: 1px solid black;
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
@@ -12,6 +12,9 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 #galery li {
     list-style: none;
@@ -20,13 +23,14 @@
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
-    background-color: darkslategrey;
+    background-color: rgb(33, 33, 35);
     width: 98%;
     margin: 1% auto;
     display: flex;
+    color: #d1b455;
 }
 h2 {
-    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    text-shadow: 1px 0px 1px #090101, 0px 1px 1px #111110, 2px 1px 1px #11100b, 1px 2px 1px #141313, 3px 2px 1px #13141b, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 .portrait {
     width: 50%;
@@ -79,14 +83,14 @@ h2 {
 #button {
     width: 80%;
     height: 30%;
-    margin: 20% auto;
+    margin: 10% auto;
     display: flex;
     justify-content: space-around;
     gap: 10px;
 }
 button {
     width: 25%;
-    height: 30%;
+    height: 20%;
     font-size: larger;
     border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
@@ -95,4 +99,5 @@ button {
     box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
 }
