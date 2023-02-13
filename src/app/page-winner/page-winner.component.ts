@@ -12,7 +12,7 @@ import { HeroesInformationsService } from '../heroes-informations.service';
 })
 export class PageWinnerComponent implements OnInit {
 
-  title = 'The Winner is :';
+  title = 'The Winner is';
 
   constructor(private router:Router, public heroe: HeroesInformationsService) {} 
 
